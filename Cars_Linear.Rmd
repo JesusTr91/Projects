@@ -1,0 +1,48 @@
+# Linear Regression Explanation
+
+```{r}
+library('ggplot2')
+library('dplyr')
+library('sjlabelled')
+library('sjmisc')
+library('scales')
+library('sjPlot')
+theme_set((theme_sjplot()))
+
+#Load dataset and summarize it
+setwd('C:/Users/Propietario/Desktop/R')
+data <- read.csv('cars.csv', header=TRUE, stringsAsFactors = FALSE)
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+dnorm(60, mean = 71, sd = 15)
+```
+
+```{r}
+?glimpse
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
