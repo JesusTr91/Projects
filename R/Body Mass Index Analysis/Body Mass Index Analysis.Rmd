@@ -1,0 +1,179 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+## Body Mass Index Survey Analysis
+
+### Introduction
+
+The Body Mass Index is an important factor as it is widely regarded to the chances of having a longer and healthier life if you have an ideal index. Basically, is a way to know if your weight is proportional to your height and can help you to determine any health risks you may face if it's outside the healthy range.
+
+### Objetive
+
+In this project we will analyze the NHANES survey and use a "survey-weighted" regression to test any relationships between measurements. We will gather the attention around the Body Mass Index (BMI) and its relationship with physical activity.
+
+### Data
+
+A good source to analyze this factor is the National Health and Nutrition Examination Survey (NHANES). It is a complex survey designed to measure the population's health and nutritional status in the United States. The data includes measurements related to overall health, diet, physical activity, mental health, socioeconomic factors, etc, of over 20,000 individuals including adults and children.
+
+```{r warning=FALSE, message=FALSE}
+library(NHANES)
+library(dplyr)
+library(ggplot2)
+library(survey)
+library(broom)
+library(quantreg)
+
+data("NHANESraw")
+df <- NHANESraw
+glimpse(df)
+```
+By having a glimpse to the data we can realize that it contains 4 years of historical data (2009-2012) and that contains data of different regions that include different races such as Mexicans, Afroamericans, Hispanic,etc. 
+
+### Exploratory Analysis
+
+Lets have a look to the weights by race based on the 4 years of data.  Currently the weights sum to 2 times the US population number, so we need to divide the 2-year weight in half so that in total, the sum of the weights is equal to the US population.
+
+```{r}
+df <- df %>% mutate(WTMEC4YR = WTMEC2YR/2)
+
+ggplot(df, aes(x = Race1, y = WTMEC4YR)) + 
+      geom_boxplot() + 
+      labs(title='Weight Across the 4 Years by Race') +
+      xlab('Race') +
+      ylab('Weight')
+```
+
+As you can see there is a higher tendency of the weight across the 4 years for the white race compared to the others. 
+
+Using the survey library we can specify the survey design for analyses purposes. We need to specify the design so the sampling weights and design are used properly in the statistical models. We will focus into 2 particular variables for design effects of stratification and clustering.
+
+```{r}
+df_design <- svydesign(
+    data = df, 
+    strata = ~SDMVSTRA, 
+    id = ~SDMVPSU, 
+    nest = TRUE, 
+    weights = ~WTMEC4YR)
+
+summary(df_design)
+```
+Body mass index categories are distinct for children and aduts, so lets subset the data to only analyze adults of at least 20 years old.
+
+```{r}
+df_adult <- subset(df_design, Age >= 20)
+summary(df_adult)
+print(nrow(df_design))
+print(nrow(df_adult))
+```
+
+The process above it's important since we are using the sampling methods to estimate the true measurements distributions within the total population. In this case we want to estimate the average body mass index in the us adult population and get a visualization of the distribution.
+
+```{r warning=FALSE, message=FALSE}
+bmi_avgr <- df %>% 
+    filter(Age >= 20) %>%
+    summarize(mean(BMI, na.rm=TRUE))
+bmi_avgr
+
+bmi_mean <- svymean(~BMI, design = df_adult, na.rm = TRUE)
+bmi_mean
+
+df %>% 
+  filter(Age >= 20) %>%
+    ggplot(mapping = aes(x = BMI, weight = WTMEC4YR)) + 
+    geom_histogram()+
+    geom_vline(xintercept = coef(bmi_mean), color="red") + labs(title='Average Body Mass Index Distribution', x='Body Mass Index (kg/$m^2$)', y='Count') 
+```
+
+The index distribution seems satisfactory since most people is under 40 kg/$m^2$ and even showing a slight skewness due to having a much higher index.
+
+Now lets inquire if the distribution of body mass index differs between individual who are physically active against those who are not and compared them visually. Lets also make a t-test comparing the average index between physically active people.
+
+```{r warning=FALSE}
+df %>% 
+  filter(Age>=20) %>%
+    ggplot(mapping = aes(x = PhysActive, y = BMI, weight = WTMEC4YR)) + 
+    geom_boxplot() + labs(title='Body Mass Index by Physically Active Status', x='Physically Active', y='Body Mass Index') 
+
+survey_ttest <- svyttest(BMI~PhysActive, design = df_adult)
+print(tidy(survey_ttest))
+```
+By the plot it may seem that people who are physically active have lower body mass indexes. That is partially true. It is actually more complex than a simple relation ship between this 2 factors, in fact there are more other factors that contribute to this relationship such as demographics, lyfestyles and other particular ones.
+
+Lets take a step ahead an investigate if smoking has a relationship with the body mass index.
+
+```{r}
+phys_smoking <- svyby(~PhysActive, by = ~SmokeNow,
+                       FUN = svymean, 
+                       design = df_adult, 
+                       keep.names = FALSE)
+
+ggplot(data = phys_smoking, 
+       aes(y = PhysActiveYes, x = SmokeNow, fill = SmokeNow)) +
+    geom_col() + labs(title='Physically Active by Smoking Status', x='Smoking Status', y="Proportion Physically Active") 
+```
+
+```{r warning=FALSE}
+index_smoke <- svyby(~BMI, by = ~SmokeNow, 
+      FUN = svymean, 
+      design = df_adult, 
+      na.rm = TRUE)
+index_smoke
+
+df %>% 
+  filter(Age>=20, !is.na(SmokeNow)) %>%
+    ggplot(mapping = aes(x = SmokeNow, y = BMI, weight = WTMEC4YR)) + 
+    geom_boxplot() + labs(title='Body Mass Index by Smoking Status', x='Smoking Status', y="Body Mass Index") 
+```
+
+Looking at these 2 charts we can say that people who smoke are less likely to be physically active and have a lower BMI on average. Additionally, people who are physically active have a lower body mass index on average. 
+
+To get a better insight of the situation, we can compare body mass index by physical activity stratified by smoking status in the chart below.
+
+```{r warning=FALSE}
+df %>% 
+  filter(Age>=20) %>%
+    ggplot(mapping = aes(x = SmokeNow, 
+                         y = BMI, 
+                         weight = WTMEC4YR, 
+                         color = PhysActive)) + 
+    geom_boxplot() + labs(title='BMI by Physically Active Status & Smoking Status', x='Smoking Status', y="Body Mass Index") 
+```
+
+Like previously seen, individual who are physically active tend to have a lower body mass index no matter their smoking status, same case for those who omitted answering the question in the survey. Interesting how smokers also have lower indexes and also the difference of index of the physically active to non active is slightly smaller in smokers than in no smokers.
+
+### Regression Model
+
+As previously done, we are adding the smoking status as some toher possible predictors of bosy mass index by using a linear regression model with multiple independent variables. In this case we are going to use a weighted method since we are using survey data.
+
+```{r}
+lin_mod1 <- svyglm(BMI ~ PhysActive*SmokeNow, design = df_adult)
+lin_mod1 <- tidy(lin_mod1)
+
+dif_n_smoking <- lin_mod1 %>% 
+    filter(term=="PhysActiveYes") %>% 
+    select(estimate)
+dif_smoking <- lin_mod1 %>% 
+    filter(term%in%c("PhysActiveYes","PhysActiveYes:SmokeNowYes")) %>% 
+    summarize(estimate = sum(estimate))
+
+print(lin_mod1)
+print(dif_smoking)
+print(dif_n_smoking)
+```
+Above we have fitted a regression model where the relation of body mass index with physical activity varies by smoking status. 
+
+### Conclusions and Recomendations
+
+The relation between physical activity and smoking has a small p-value, suggesting that the relation does vary by smoking status. There is a major difference in the non smoker population where the difference between physically active and non-physically active people is large.
+
+It would be beneficial to check any assumptions about our model, so we can conclude that physically active people tend to have lower body mass index, as do smokers. Although they have similar effect sizes, we probably wouldn't want to recommend smoking along with exercise.
+
+In order to determine whether physical activity causes lower indexes, we need to use causal inference methods. Also, adjust and check for other possible factors for our model to give a more solid conclusion of the insights we covered.
+
+```{r}
+lin_mod2 <- svyglm(BMI ~ PhysActive*SmokeNow + Race1 + Alcohol12PlusYr + Gender, 
+               design = df_adult)
+tidy(lin_mod2)
+```
