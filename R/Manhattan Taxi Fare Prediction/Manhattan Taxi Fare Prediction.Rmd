@@ -1,0 +1,127 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# Taxi Fare Prediction
+
+## Introduction
+
+Nowadays, we live in a data-drive world, everything can be quantified and analyzed. Hence, Analytics can be applied to any type of problem or business to make it more efficient and lucrative.
+
+Taxi drivers can benefit from researching and getting insights from the data that they themselves produce and guide them to maximize their profits.
+
+## Objetive
+
+Therefore, we are going to analyze a random sample of 49999 New York taxi trips made in 2015, however we are going to limit the are to Manhattan. Furthermore, we will build a random forest model and regression tree model that can predict the locations and times when the biggest fares can be earned.
+
+
+```{r warning=FALSE, message=FALSE}
+library(tidyverse)
+library(ggmap)
+library(viridis)
+library(tree)
+library(lubridate)
+library(randomForest)
+
+df <- read.csv('Taxi_fares.csv')
+glimpse(df)
+```
+
+## Data Cleaning and Base Map
+
+Preparing and cleaning our data its a vital step. This can make the difference between success or failure when we want to build machine learning models.
+
+```{r}
+df <- df %>% 
+      rename(long = pickup_longitude, lat=pickup_latitude) %>% 
+      filter(fare_amount > 0 | tip_amount > 0) %>% 
+      mutate(total = log(fare_amount + tip_amount)) %>% 
+      mutate(total2 = fare_amount + tip_amount)
+
+df <- df %>% 
+      filter(between(lat, 40.70, 40.83) & 
+           between(long, -74.025, -73.93))
+
+manhattan <- readRDS("manhattan.rds")
+```
+
+## Exploratory Data Analysis
+
+Lets start by visualizing where to people tend to start a taxi trip.
+
+```{r fig.align='center'}
+ggmap(manhattan, darken=0.3)+
+    scale_fill_viridis(option='plasma') +
+    geom_bin2d(data = df, aes(x = long, y = lat), bins = 55, alpha = 0.5) +
+    labs(title='Trip Starting Points',x='Longitude', y='Latitude', fill = 'Trips')
+```
+
+The map shows that most trips start at around a particular area. According to Foursquare.com this specific area corresponds to a highly concentrated business and tourist one.
+
+Lets predict the total fare with latitude and longitude by employing a regression tree. This algorithm will try to find cutpoints in those predictors that results in a decision tree with the best predictive capability.
+
+```{r fig.align='center'}
+tree <- tree(total ~ lat + long, data = df)
+plot(tree); text(tree)
+```
+
+We have a start but it is actually a very simple model that posses only one split: 
+
+The model predicts that trips where the latitude is upper than 40.7237 are more expensive, which makes sense as it is downtown.
+
+Somehow disappointing information that actually does not need any computational knowledge to get to that conclusion, just common sense. Let's add more predictors so see how far we can go.
+
+```{r}
+df <- df %>% 
+      mutate(hour = hour(pickup_datetime),
+             wday = wday(pickup_datetime, label=T),
+             month = month(pickup_datetime, label=T))
+
+tree <- tree(total ~ lat + long + hour + wday + month, data = df)
+plot(tree); text(tree); summary(tree)
+```
+
+The model hasn't changed at all, even after including time variables. Likely due to latitude being the most promising variable to split and the other variables not being enough to be included. 
+
+Hence, let's change the strategy and use a random forest model. This algorithm creates different trees to fit to subsets of the data, an hopefully will include the other variables in some of the trees that make it up.
+
+```{r fig.align='center'}
+forest <- randomForest(total2 ~ lat + long + hour + wday + month, 
+                       data=df, ntree=100, sampsize=20000)
+forest; plot(forest)
+```
+
+The plot above shows the mean of squared residuals, in other words, the average of the squared errors the model makes. Compared to the single tree model, this new one has a slightly lower error.
+
+Thus, let's go ahead and use this model to look at the predictions projected into the map.
+
+```{r fig.align='center'}
+df$pred_total <- forest$predicted
+ggmap(manhattan, darken=0.3) +
+    scale_fill_viridis(option = 'plasma') +
+    stat_summary_2d(data=df, aes(x = long, y = lat, z = pred_total),
+                    fun = mean, alpha = 0.6, bins = 60) +
+    labs(title='Predicted Fare', x='Longitude', y='Latitude', fill='Log fare + tip')
+```
+
+It looks like the predicted fares we see at the map are predicted to be high at downtown while lower at midtown. This can be somehow useful, but trips wont always have a high fare, therefore lets create a new map showing the predicted mean fares.
+
+```{r fig.align='center'}
+mean_fare <- function(x) { 
+    ifelse( length(x) >= 15, mean(x), NA) 
+}
+
+ggmap(manhattan, darken=0.3) +
+    stat_summary_2d(data=df, aes(x = long, y = lat, z = total2),
+                    fun = mean_fare,
+                    alpha = 0.6, bins = 60) +
+  scale_fill_viridis(option = 'plasma') +
+  labs(title='Average Predicted Fare', x='Longitude', y='Latitude', fill='Log fare + tip')
+```
+
+## Conclusions and Recomendations
+
+The random forest model is a good tool to capture patterns in our data. So far, for taxi drivers it is more profitable to work around downtown since thats where people hang out more in comparison to other areas at Manhattan.
+
+Further work may include the plotting of predictors over time, or a combination of time and space. If you are curious enough, you should try it.
