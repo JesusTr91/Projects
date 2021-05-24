@@ -1,0 +1,186 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# San Francisco Crime Analysis
+
+## Introduction
+
+Nowadays we live in a data-driven society, with different problems and challenges. Therefore modern problems, required modern solutions. Gladly , today we have many tools that can help us to solve troubles. One of this tools is Data science, that can gather insights to help us understand a problematic and help us to find solutions to them.
+
+The data generated each day is exponentially growing everyday it passes and it's begging for analysts to dive deep in it, and make use of the raw input in an impactful way. We can now fight crime as a vigilante, all from behind a computer by exploring and analyze crime data sets.
+
+## Objetive
+
+In this project we will explore to the most deep and dubious streets of San Francisco in order to understand the relationship between reported crime incidents by civilians and police officers. 
+
+## Data
+
+This particular data set can be found at [Kaggle](https://www.kaggle.com/san-francisco/sf-police-calls-for-service-and-incidents) and also at the San Francisco open data webpage, [here](https://datasf.org/opendata/), where you can find more interesting data about the city.
+
+```{r warning=FALSE, comment='', message=FALSE}
+library(lubridate)
+library(tidyverse)
+library(ggplot2)
+library(ggmap)
+
+incidents <- read.csv("incidents.csv")
+calls <- read_csv("calls.csv")
+
+glimpse(calls)
+glimpse(incidents)
+```
+
+There has to be relationship between incidents reported by civilians and officers by the date on which the incidents were documented, so let's combine this information. By joining both datasets the structure preserves only days on which both civilians reported incidents and police encountered incidents.
+
+```{r comment=''}
+daily_inc <- incidents %>% 
+    count(Date, sort = TRUE) %>% 
+    rename(n_incidents = n)
+daily_cal <- calls %>% 
+    count(Date, sort = TRUE) %>% 
+    rename(n_calls = n)
+
+daily_inc$Date <- as_datetime(daily_inc$Date)
+
+df <- inner_join(daily_inc, daily_cal, by = c("Date" = "Date"))
+glimpse(df)
+```
+
+## Exploratory Data Analysis
+
+We need to find a way to search and comprehend crime rates. We can do this by looking at the frequency of calls and incidents across time to help discern if there is a relationship between these variables.
+
+```{r fig.align='center'}
+plot <- df %>%
+  gather(key = report, value = count, -Date)
+
+ggplot(plot, aes(x = Date, y = count, color = report)) + 
+      labs(x='Date', y='Count', title='Calls and Incidents Frequency') + 
+      geom_smooth(method = "lm", formula = y ~ x) + 
+      geom_point()
+```
+
+A quantitative way to determine the relationship between 2 variables is to calculate the correlation coefficient between them, in other words, this number represents the linear dependence between two data sets. Firstly, let's calculate the daily count coefficient and subsequently take a broad view of the trends by summarizing the data into monthly counts and calculate the coefficient.
+
+```{r comment=''}
+daily_cor <- cor(df$n_incidents, df$n_calls)
+
+cor_df <- df %>% 
+  mutate(month = month(Date)) %>%
+  group_by(month) %>% 
+  summarize(n_incidents = sum(n_incidents),
+            n_calls = sum(n_calls))
+
+monthly_cor <- cor(cor_df$n_incidents, cor_df$n_calls)
+
+print('Correlation coefficient between daily frequencies:')
+daily_cor
+print('Correlation coefficient between monthly frequencies:')
+monthly_cor
+```
+
+It will be helpful to have all the information from each police reported incident and each civilian call on their shared dates so we can calculate similar statistics from each dataset and compare results.
+
+```{r echo=FALSE}
+calls_dates <- calls %>%
+  semi_join(df, by = c("Date" = "Date"))
+
+identical(sort(unique(df$Date)), sort(unique(calls_dates$Date)))
+
+incidents$Date <- as_datetime(incidents$Date)
+
+incidents_dates <- incidents %>% 
+  semi_join(df, by = c("Date" = "Date"))
+```
+
+After some data manipulation we are ready to see some results and get interesting information. For searching trends in categorical data we need to understand the level of importance each category has. We can visualize this by ranking the order of the each category into a bar chart.
+
+```{r}
+plot_calls_freq <- calls_dates %>% 
+  count(Descript) %>% 
+  top_n(15, n) %>% 
+  ggplot(aes(x = reorder(Descript, n), y = n)) +
+  geom_bar(stat = 'identity') +
+  ylab("Count") +
+  xlab("Crime Description") +
+  ggtitle("Calls Reported Crimes") +
+  coord_flip()
+  
+plot_incidents_freq <- incidents_dates %>% 
+  count(Descript) %>% 
+  top_n(15, n)  %>% 
+  ggplot(aes(x = reorder(Descript, n), y = n)) +
+  geom_bar(stat = 'identity') +
+  ylab("Count") +
+  xlab("Crime Description") +
+  ggtitle("Incidents Reported Crimes") +
+  coord_flip()
+```
+
+As you can visualize "Grand theft from locked auto" is the crime with highest incidence by far.
+However "Auto boost/Strip" falls way behind in the reported by civilian chart, which made me think that people are aware of the problem and try to help each other by preventing the crime.
+Yet, this is probably only the case where the location of a "called in crime" is similar to the crime incidence location. Let's check to see if the locations of the most frequent civilian reported crime and police reported crime are similar.
+
+```{r echo=FALSE, fig.align='center', fig.height=3, fig.width=6.5}
+plot_calls_freq
+```
+
+```{r echo=FALSE, fig.align='center', fig.height=3, fig.width=6.5}
+plot_incidents_freq
+```
+
+It appears the datasets share locations where auto crimes occur and are reported most frequently - such as on Point Lobos Avenue, Lyon Street, and Mission Street. It would be great to plot co-occurrence of these locations to visualize overlap, however we only have longitude and latitude data for police reported incidents. No matter, it will still be very valuable to inspect the frequency of auto crime occurrence on a map of San Francisco. This will give us immediate insight as to where auto crimes occur. Most importantly, this visualization will provide a powerful means of communication.
+
+
+```{r comment=''}
+location_calls <- calls_dates %>%
+  filter(Descript == "Auto Boost / Strip") %>% 
+  count(Address) %>% 
+  arrange(desc(n))%>% 
+  top_n(10, n)
+
+location_incidents <- incidents_dates %>%
+  filter(Descript == "GRAND THEFT FROM LOCKED AUTO") %>% 
+  count(Address) %>% 
+  arrange(desc(n))%>% 
+  top_n(10, n)
+
+location_calls
+location_incidents
+```
+
+It seems the datasets share locations where auto crimes occur and are reported most frequently, for example: Mission Street, Lyon Street and Point Lobos Avenue. 
+
+This is helpful information, however a visualization worths more than a thousand words. So, by plotting the occurrence of these locations to visualize the frequency of auto crime occurrence on a map of San Francisco. This will give us rapid insight of where auto crimes occur around San Francisco.
+
+```{r fig.align='center'}
+sf_map <- readRDS("sf_map.RDS")
+auto_crime <- incidents_dates %>%
+  filter(Descript == "GRAND THEFT FROM LOCKED AUTO")
+
+ggmap(sf_map) +
+  stat_density_2d(
+    aes(x = X, y = Y), alpha = 0.9,
+    size = 0.01, bins = 30, data = auto_crime,
+    geom = "density_2d") + labs(x = 'Longitude', y = 'Latitude') + 
+    ggtitle('Automovile Theft Level Curves')
+```
+
+```{r warning=FALSE, fig.align='center'}
+ggmap(sf_map) +
+  geom_density_2d_filled(
+    aes(x = X, y = Y, fill = ..level..), alpha = 0.60,
+    size = 0.1, bins = 10, data = auto_crime,
+    geom = "density_2d") + labs(x = 'Longitude', y = 'Latitude') + 
+    ggtitle('Automovile Theft Crime Density')
+```
+
+
+## Conclusions and Recommendations
+
+Data Science combines programming skills, statistics and math to extract meaningful insights from data. Whichever tool you prefer, it is often important for analysts to work with similar platforms so that they can share their insights. 
+
+These insigths can help the population to be informed about particular circumstances that surrounds them like crime rates around San Francisco. Our final visualization can provide powerful means of communication and make the difference in this world. There is still work to do, if you are curious enough, you can map other crime types and gather information about the crime arround the city.
