@@ -1,0 +1,200 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+# Agricultural Goods Price Forecast
+
+## Introduction
+
+Agriculture is referred to as the production, processing and distribution of agricultural goods. 
+It can be also the main source income for most developing countries. In addition to providing food and raw material, agriculture also provides employment opportunities to a very large percentage of the population.
+
+## Objetive
+
+We are going to make use of our analytical knowledge to analyze and forecast agricultural goods prices of Rwanda, a developing country.
+
+## Data
+
+For this project we'll use the United Nations Humanitarian Data Exchange Global Food Price Database that can be found [here](https://data.humdata.org/dataset/wfp-food-prices).
+
+The database covers agricultural goods like beans, rice, maize, fish, and sugar for 76 countries and some 1,500 markets. The data is updated weekly and goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.
+
+```{r warning=FALSE, message=FALSE, comment=''}
+library(dplyr)
+library(readr)
+library(lubridate)
+library(knitr)
+library(ggplot2)
+library(magrittr)
+library(forecast)
+
+potato <- read_csv("Potato.csv", col_types = cols_only(adm1_name = col_character(), 
+                        mkt_name = col_character(), cm_name = col_character(), 
+                        mp_month = col_integer(), mp_year = col_integer(), 
+                        mp_price = col_number()))
+potato_rename <- rename(potato, "region" = "adm1_name", "market" = "mkt_name", 
+                 "commodity_kg" = "cm_name", "month" = "mp_month", "year" = "mp_year", 
+                 "price_rwf" = "mp_price")
+glimpse(potato_rename)
+```
+## Data cleaning
+
+As usually raw data doesn't arrives as we would want, so we have to make some arrengments and manipulate the data so we can work with it.
+
+```{r comment=''}
+potato_clean <- potato_rename %>% 
+    mutate(date = ymd(paste(year, month, '01'))) %>%
+    select(-year, -month)
+head(potato_clean)
+```
+
+Now we have our cleaned data, an can follow the same process for other food types, we have many options:
+
+ * Beans
+ * Chili
+ * Cassava 
+ * Oranges
+ * Maize
+ * Peas
+ * Sorghum
+ * Tomatoes
+ 
+So, let's repeat the same process over and over! 
+Just kidding, even though you can do that it is very unconvenient so we are going to build some functions to make our lives easier. However, we are going to continue with our potato as example of how you could do this analysis if it was just about one topic (potatoes), but you will find it is very much convenient to write functions in the end. 
+
+First of all, let's get a function that can read our data and define each column type.
+
+```{r comment=''}
+read_data <- function(commodity){
+    data_file <- paste0(commodity, '.csv')
+    prices <- read_csv(
+     data_file,
+     col_types = cols_only(
+      adm1_name = col_character(),
+      mkt_name = col_character(),
+      cm_name = col_character(),
+      mp_month = col_integer(),
+      mp_year = col_integer(),
+      mp_price = col_double()))
+    
+prices_renamed <- prices %>% 
+  rename(
+    region = adm1_name, 
+    market = mkt_name,
+    commodity_kg = cm_name,
+    month = mp_month,
+    year = mp_year,
+    price_rwf = mp_price
+  )
+
+prices_renamed  %>% 
+  mutate(
+    date = ymd(paste(year, month, "01"))
+  ) %>% 
+  select(-month, -year)
+}
+
+pea <- read_data("Pea")
+glimpse(pea)
+```
+
+## Exploratory Data Analysis
+
+One first good step when you have historical data and want to start the analysis, its to plot the data you have gather. So, let's see how the prices of potatoes has change over time.
+
+```{r fig.align='center', fig.height=3, fig.width=5}
+ggplot(data = potato_clean, aes(x = date, y = price_rwf, group = market)) +
+    geom_line(alpha = 0.2) +
+    ggtitle("Potato Price Across the Years (2013-2016)") +
+    labs(x='Date', y='Price')
+```
+
+As you can see, there is a increasing trend on the prices of potatoes. More particularly, it seems that the prices relays on the season: for each year the price seems to drop at December-January and rise through the year until a peak around August.
+
+We want to make similiar plots to the one above, so let's wrap the plotting code into a function. 
+
+```{r fig.align='center', fig.height=3, fig.width=5}
+price_plot <- function(prices, commodity){
+title <- paste(commodity, "Price Across the Years (2011-2016)")
+prices %>% 
+  ggplot(aes(date, price_rwf, group = market)) +
+  geom_line(alpha = 0.2) +
+  ggtitle(title) +
+  labs(x='Date', y='Price')
+}
+price_plot(pea, "Pea")
+```
+
+## Forecasting
+
+Yes, it can be really helpful to get insights about the present status of particular circumstances, but what can be way more exciting its to get insight of how the situation may change n the future, in other words, make predictions.
+
+In this situation we are working with food prices, so, we will take the median price across markets and analyze the resulting time series.
+
+The reason we are taking the madian and not the mean it is because, by looking at the plots and the big spike in the price, we can conclude That probably these spikes probably indicate a logistic problem. Whether the food wasn't easily available at the market, or the harvest season wasn't good, the consequence of these outliers is that it is a bad idea to use the mean price of each time point. Instead, the median makes more sense since it is robust against outliers.
+
+```{r comment=''}
+potato_summary <- potato_clean %>% 
+    group_by(date) %>% 
+    summarize(median_price_rwf = median(price_rwf))
+head(potato_summary)
+```
+
+```{r comment=''}
+potato_ts <- potato_summary %$% 
+    ts(median_price_rwf, start = c(year(min(date)), month(min(date))), 
+       end = c(year(max(date)), month(max(date))), frequency = 12)
+potato_ts
+```
+
+```{r comment=''}
+time_series <- function(prices){
+prices_summarized <- prices %>%
+  group_by(date) %>% 
+  summarize(median_price_rwf = median(price_rwf))
+
+time_series <- prices_summarized %$% 
+  ts(
+    median_price_rwf, 
+    start = c(year(min(date)), month(min(date))), 
+    end   = c(year(max(date)), month(max(date))), 
+    frequency = 12
+  )
+}
+pea_ts <- time_series(pea)
+pea_ts
+```
+
+```{r fig.align='center', fig.height=3, fig.width=5}
+potato_forecast <- forecast(potato_ts)
+potato_forecast
+
+autoplot(potato_forecast, main = 'Potato Price Forecast', xlab='Date', ylab='Median Price')
+```
+
+After some data manipulation we have the forecast at last. But do we know if we can trust in this forecast? Well, recall that we inquire that the data depends of the season (low prices at December-January, and a high peak at August). Consequently, a good forecast should show a similar shape throughout the seasons.
+
+```{r fig.align='center', fig.height=3, fig.width=5}
+plot_forecast <- function(time_series, commodity){
+price_forecast <- forecast(time_series)
+autoplot(price_forecast, main = paste(commodity, 'Price Forecast'), xlab='Date', ylab='Median Price')
+}
+plot_forecast(pea_ts, "Pea")
+```
+
+## Conclusion and Recommendations
+
+To run a forecasting model we need to convert data into a time series. This can be an usual tool to gather insights of not just the current status of a situation, but to get a view of the possible future it may have.
+
+As shown, there was a lot of effort writing all that code to just analyze the potato data. Fortunately and by good practices, wrapping all the analysis into functions, we could easily reproduce the job with another type of food. Remember there is still more that that can be analyzed, just take the functions we already wrote and do a report.
+
+### Example: Sorghum Forecasting
+
+```{r fig.align='center', fig.height=3, fig.width=5}
+commodity <- "Sorghum"
+sorghum <- read_data(commodity)
+price_plot(sorghum, commodity)
+sorghum_ts <- time_series(sorghum)
+plot_forecast(sorghum_ts, commodity)
+```
