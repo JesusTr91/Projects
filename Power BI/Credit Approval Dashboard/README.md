@@ -24,3 +24,6 @@ and then you can have multiple options.
 Even from here, if you wanna look at undergraduate
 degree holders, who are also married and also females, selecting those parameter the data will be reflected
 in all of your plots.
+
+
+![Image](https://github.com/JesusTr91/Projects/blob/main/Power%20BI/Credit%20Approval%20Dashboard/Dashboard.png)
