@@ -5,7 +5,7 @@ It is a growing concern in Mexican public opinion that has a direct impact on th
 ## Objetive
 The fist step in order to solve a problem, is to understand it, and we can do this asking us the right questions and dive deep into the data. The goal is to account for the impact the pandemic has had in Mexico and make the information available so population can be aware of the current covid 19 status of the country.
 
-* Determine Covid 19 current status of Mexico by getting visuzlizations of total cases, deaths, infections and deaths rates.
+* Determine Covid 19 current status of Mexico by getting vizualizations of total cases, deaths, infections and deaths rates.
 
 * Build a code that easily gets covid 19 infographics of selected state.
 
@@ -17,7 +17,7 @@ The fist step in order to solve a problem, is to understand it, and we can do th
 
 * Determine the risk factors for Covid 19 morbidity and mortality among people of different age groups with chronic degenerative diseases.
 
-* Finally, get a visualization of Meico's city sectors (alcaldias) according to deaths and total cases.
+* Finally, get a visualization of Mexico's city sectors (alcaldias) according to deaths and total cases.
 
 ## Data
 
