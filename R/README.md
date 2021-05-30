@@ -8,6 +8,8 @@ R is the basic reference software in the world of statistics, the most powerful 
 
 This statistical programming language R is designed for statistical calculations, mathematical calculations and creation of graphs in an easy and fast way, with a lot of documentation available thanks to the large active community it has for being a collaborative project.
 
+Here, I've gather the projects I've been working on: 
+
 |Project Name|Description |
 |:------|:-----|
 |`Agricultural Goods Price Forecast`| Analysis and forecast of agricultural goods prices in Rwanda.|
