@@ -6,5 +6,5 @@ One only has to look at the figures to be aware of the advantages that the inclu
 
 ## Objetive
 
-We are going to use mltiple linear regression model to predict sells revenue
-by build linear regresion model with scikit learn, conduct an exploratory data analysis and undertand how to interpret the regresion coeficients.
+We are going to use multiple linear regression model to predict sells revenue
+by building a regresion model with scikit learn. We are also conducting an exploratory data analysis and undertanding how to interpret the regresion coeficients.
