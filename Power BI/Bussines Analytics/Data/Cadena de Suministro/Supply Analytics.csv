@@ -1,0 +1,752 @@
+﻿Day Contacted,Inventory Levels,Manufactured Goods (%),Manufactured Goods %,Multiple Retailers,Plant,Product Advertised,Product ,Type
+87,High,<75%,"732,00 %",no,California,no,not on backorder,unknown
+10,High,<75%,"254,00 %",no,California,yes,not on backorder,cellular
+30,High,<75%,"244,00 %",no,Florida,no,not on backorder,cellular
+229,High,<75%,"2710,00 %",no,Florida,yes,not on backorder,cellular
+202,High,<75%,"2184,00 %",no,Florida,yes,not on backorder,telephone
+169,High,<75%,"1652,00 %",no,Georgia,yes,not on backorder,cellular
+77,High,<75%,"888,00 %",no,Georgia,yes,not on backorder,telephone
+41,High,<75%,"250,00 %",no,Illinois,no,not on backorder,cellular
+28,High,<75%,"124,00 %",no,Illinois,no,not on backorder,telephone
+464,High,<75%,"3018,00 %",no,Illinois,yes,not on backorder,cellular
+97,High,<75%,"710,00 %",no,Illinois,yes,not on backorder,telephone
+16,High,<75%,"124,00 %",no,Massachusetts,no,not on backorder,telephone
+126,High,<75%,"1798,00 %",no,Massachusetts,yes,not on backorder,cellular
+68,High,<75%,"960,00 %",no,Massachusetts,yes,not on backorder,telephone
+66,High,<75%,"504,00 %",no,New Jersey,no,not on backorder,cellular
+355,High,<75%,"5240,00 %",no,New Jersey,yes,not on backorder,cellular
+273,High,<75%,"4064,00 %",no,New Jersey,yes,not on backorder,telephone
+56,High,<75%,"502,00 %",no,New York,no,not on backorder,cellular
+288,High,<75%,"3554,00 %",no,New York,yes,not on backorder,cellular
+184,High,<75%,"1564,00 %",no,New York,yes,not on backorder,telephone
+41,High,<75%,"374,00 %",no,Ohio,no,not on backorder,cellular
+28,High,<75%,"130,00 %",no,Ohio,no,not on backorder,telephone
+1081,High,<75%,"8170,00 %",no,Ohio,yes,not on backorder,cellular
+469,High,<75%,"4406,00 %",no,Ohio,yes,not on backorder,telephone
+23,High,<75%,"132,00 %",no,Oregon,no,not on backorder,cellular
+150,High,<75%,"852,00 %",no,Oregon,yes,not on backorder,cellular
+22,High,<75%,"158,00 %",no,Oregon,yes,not on backorder,telephone
+49,High,<75%,"488,00 %",no,Oregon,yes,not on backorder,unknown
+4,High,<75%,"130,00 %",no,Pennsylvania,no,not on backorder,cellular
+476,High,<75%,"5416,00 %",no,Pennsylvania,yes,not on backorder,cellular
+237,High,<75%,"4038,00 %",no,Pennsylvania,yes,not on backorder,telephone
+30,High,<75%,"132,00 %",no,Texas,no,not on backorder,cellular
+16,High,<75%,"124,00 %",no,Texas,no,not on backorder,telephone
+417,High,<75%,"3970,00 %",no,Texas,yes,not on backorder,cellular
+187,High,<75%,"2572,00 %",no,Texas,yes,not on backorder,telephone
+19,High,<75%,"122,00 %",no,Washington,no,not on backorder,telephone
+1218,High,<75%,"12230,00 %",no,Washington,yes,not on backorder,cellular
+509,High,<75%,"5234,00 %",no,Washington,yes,not on backorder,telephone
+7,High,<75%,"142,00 %",yes,Florida,yes,not on backorder,cellular
+7,High,<75%,"122,00 %",yes,Georgia,no,not on backorder,cellular
+5,High,<75%,"144,00 %",yes,Massachusetts,yes,not on backorder,cellular
+31,High,<75%,"122,00 %",yes,New York,yes,not on backorder,cellular
+7,High,<75%,"244,00 %",yes,New York,yes,not on backorder,unknown
+2,High,<75%,"122,00 %",yes,Oregon,no,not on backorder,unknown
+9,High,<75%,"124,00 %",yes,Pennsylvania,yes,not on backorder,telephone
+9,High,<75%,"128,00 %",yes,Texas,yes,not on backorder,cellular
+18,High,<75%,"122,00 %",yes,Washington,no,not on backorder,telephone
+29631,High,>125%,"172672,00 %",no,California,no,not on backorder,cellular
+1910,High,>125%,"11798,00 %",no,California,no,not on backorder,telephone
+61434,High,>125%,"236788,00 %",no,California,no,not on backorder,unknown
+5518,High,>125%,"22786,00 %",no,California,yes,not on backorder,cellular
+474,High,>125%,"2046,00 %",no,California,yes,not on backorder,telephone
+6483,High,>125%,"24692,00 %",no,California,yes,not on backorder,unknown
+17784,High,>125%,"80500,00 %",no,Florida,no,not on backorder,cellular
+744,High,>125%,"3334,00 %",no,Florida,no,not on backorder,telephone
+1736,High,>125%,"9176,00 %",no,Florida,yes,not on backorder,cellular
+96,High,>125%,"456,00 %",no,Florida,yes,not on backorder,telephone
+241,High,>125%,"902,00 %",no,Georgia,no,not on backorder,cellular
+9,High,>125%,"70,00 %",no,Georgia,no,not on backorder,telephone
+600,High,>125%,"2894,00 %",no,Georgia,yes,not on backorder,cellular
+31,High,>125%,"182,00 %",no,Georgia,yes,not on backorder,telephone
+6311,High,>125%,"14876,00 %",no,Illinois,no,not on backorder,cellular
+292,High,>125%,"654,00 %",no,Illinois,no,not on backorder,telephone
+42,High,>125%,"182,00 %",no,Illinois,no,not on backorder,unknown
+7292,High,>125%,"17236,00 %",no,Illinois,yes,not on backorder,cellular
+521,High,>125%,"1192,00 %",no,Illinois,yes,not on backorder,telephone
+19,High,>125%,"214,00 %",no,Illinois,yes,not on backorder,unknown
+400,High,>125%,"1736,00 %",no,Massachusetts,no,not on backorder,cellular
+831,High,>125%,"3914,00 %",no,Massachusetts,yes,not on backorder,cellular
+51,High,>125%,"356,00 %",no,Massachusetts,yes,not on backorder,telephone
+1,High,>125%,"76,00 %",no,Massachusetts,yes,not on backorder,unknown
+2311,High,>125%,"31648,00 %",no,New Jersey,no,not on backorder,cellular
+168,High,>125%,"2196,00 %",no,New Jersey,no,not on backorder,telephone
+40,High,>125%,"160,00 %",no,New Jersey,no,not on backorder,unknown
+2933,High,>125%,"32156,00 %",no,New Jersey,yes,not on backorder,cellular
+248,High,>125%,"3026,00 %",no,New Jersey,yes,not on backorder,telephone
+145,High,>125%,"406,00 %",no,New Jersey,yes,not on backorder,unknown
+22960,High,>125%,"74978,00 %",no,New York,no,not on backorder,cellular
+2414,High,>125%,"7890,00 %",no,New York,no,not on backorder,telephone
+239,High,>125%,"1828,00 %",no,New York,no,not on backorder,unknown
+13457,High,>125%,"45770,00 %",no,New York,yes,not on backorder,cellular
+1854,High,>125%,"6210,00 %",no,New York,yes,not on backorder,telephone
+488,High,>125%,"3848,00 %",no,New York,yes,not on backorder,unknown
+616,High,>125%,"2716,00 %",no,Ohio,no,not on backorder,cellular
+150,High,>125%,"462,00 %",no,Ohio,no,not on backorder,telephone
+107,High,>125%,"374,00 %",no,Ohio,no,not on backorder,unknown
+1808,High,>125%,"8098,00 %",no,Ohio,yes,not on backorder,cellular
+335,High,>125%,"1002,00 %",no,Ohio,yes,not on backorder,telephone
+138,High,>125%,"1000,00 %",no,Ohio,yes,not on backorder,unknown
+418,High,>125%,"5112,00 %",no,Oregon,no,not on backorder,cellular
+6,High,>125%,"164,00 %",no,Oregon,no,not on backorder,telephone
+6782,High,>125%,"47356,00 %",no,Oregon,no,not on backorder,unknown
+1221,High,>125%,"10666,00 %",no,Oregon,yes,not on backorder,cellular
+138,High,>125%,"780,00 %",no,Oregon,yes,not on backorder,telephone
+10304,High,>125%,"63902,00 %",no,Oregon,yes,not on backorder,unknown
+353,High,>125%,"2490,00 %",no,Pennsylvania,no,not on backorder,cellular
+3,High,>125%,"234,00 %",no,Pennsylvania,no,not on backorder,telephone
+194,High,>125%,"918,00 %",no,Pennsylvania,no,not on backorder,unknown
+1204,High,>125%,"6426,00 %",no,Pennsylvania,yes,not on backorder,cellular
+32,High,>125%,"234,00 %",no,Pennsylvania,yes,not on backorder,telephone
+391,High,>125%,"1574,00 %",no,Pennsylvania,yes,not on backorder,unknown
+11233,High,>125%,"46446,00 %",no,Texas,no,not on backorder,cellular
+783,High,>125%,"3606,00 %",no,Texas,no,not on backorder,telephone
+129,High,>125%,"620,00 %",no,Texas,no,not on backorder,unknown
+5577,High,>125%,"23754,00 %",no,Texas,yes,not on backorder,cellular
+535,High,>125%,"2452,00 %",no,Texas,yes,not on backorder,telephone
+139,High,>125%,"592,00 %",no,Texas,yes,not on backorder,unknown
+6173,High,>125%,"29260,00 %",no,Washington,no,not on backorder,cellular
+249,High,>125%,"864,00 %",no,Washington,no,not on backorder,telephone
+120,High,>125%,"486,00 %",no,Washington,no,not on backorder,unknown
+28957,High,>125%,"122480,00 %",no,Washington,yes,not on backorder,cellular
+1036,High,>125%,"3582,00 %",no,Washington,yes,not on backorder,telephone
+515,High,>125%,"1542,00 %",no,Washington,yes,not on backorder,unknown
+5182,High,>125%,"31912,00 %",yes,California,no,not on backorder,cellular
+259,High,>125%,"1602,00 %",yes,California,no,not on backorder,telephone
+12585,High,>125%,"45102,00 %",yes,California,no,not on backorder,unknown
+416,High,>125%,"2098,00 %",yes,California,yes,not on backorder,cellular
+12,High,>125%,"84,00 %",yes,California,yes,not on backorder,telephone
+782,High,>125%,"3148,00 %",yes,California,yes,not on backorder,unknown
+3305,High,>125%,"15430,00 %",yes,Florida,no,not on backorder,cellular
+94,High,>125%,"416,00 %",yes,Florida,no,not on backorder,telephone
+51,High,>125%,"170,00 %",yes,Florida,yes,not on backorder,cellular
+57,High,>125%,"148,00 %",yes,Georgia,no,not on backorder,cellular
+1406,High,>125%,"3276,00 %",yes,Illinois,no,not on backorder,cellular
+28,High,>125%,"70,00 %",yes,Illinois,no,not on backorder,telephone
+1312,High,>125%,"2992,00 %",yes,Illinois,yes,not on backorder,cellular
+60,High,>125%,"122,00 %",yes,Illinois,yes,not on backorder,telephone
+33,High,>125%,"220,00 %",yes,Massachusetts,no,not on backorder,cellular
+2,High,>125%,"66,00 %",yes,Massachusetts,no,not on backorder,telephone
+81,High,>125%,"406,00 %",yes,Massachusetts,yes,not on backorder,cellular
+494,High,>125%,"6492,00 %",yes,New Jersey,no,not on backorder,cellular
+28,High,>125%,"454,00 %",yes,New Jersey,no,not on backorder,telephone
+401,High,>125%,"5258,00 %",yes,New Jersey,yes,not on backorder,cellular
+33,High,>125%,"298,00 %",yes,New Jersey,yes,not on backorder,telephone
+26,High,>125%,"54,00 %",yes,New Jersey,yes,not on backorder,unknown
+6268,High,>125%,"20926,00 %",yes,New York,no,not on backorder,cellular
+556,High,>125%,"1720,00 %",yes,New York,no,not on backorder,telephone
+63,High,>125%,"1578,00 %",yes,New York,no,not on backorder,unknown
+6842,High,>125%,"23068,00 %",yes,New York,yes,not on backorder,cellular
+748,High,>125%,"2774,00 %",yes,New York,yes,not on backorder,telephone
+191,High,>125%,"4390,00 %",yes,New York,yes,not on backorder,unknown
+169,High,>125%,"828,00 %",yes,Ohio,no,not on backorder,cellular
+20,High,>125%,"90,00 %",yes,Ohio,no,not on backorder,telephone
+48,High,>125%,"164,00 %",yes,Ohio,no,not on backorder,unknown
+74,High,>125%,"292,00 %",yes,Ohio,yes,not on backorder,cellular
+20,High,>125%,"68,00 %",yes,Ohio,yes,not on backorder,telephone
+22,High,>125%,"134,00 %",yes,Ohio,yes,not on backorder,unknown
+19,High,>125%,"426,00 %",yes,Oregon,no,not on backorder,cellular
+5,High,>125%,"52,00 %",yes,Oregon,no,not on backorder,telephone
+1778,High,>125%,"11568,00 %",yes,Oregon,no,not on backorder,unknown
+161,High,>125%,"944,00 %",yes,Oregon,yes,not on backorder,cellular
+1735,High,>125%,"8108,00 %",yes,Oregon,yes,not on backorder,unknown
+83,High,>125%,"486,00 %",yes,Pennsylvania,no,not on backorder,cellular
+16,High,>125%,"54,00 %",yes,Pennsylvania,no,not on backorder,unknown
+46,High,>125%,"292,00 %",yes,Pennsylvania,yes,not on backorder,cellular
+28,High,>125%,"226,00 %",yes,Pennsylvania,yes,not on backorder,unknown
+2810,High,>125%,"11466,00 %",yes,Texas,no,not on backorder,cellular
+96,High,>125%,"616,00 %",yes,Texas,no,not on backorder,telephone
+1018,High,>125%,"4150,00 %",yes,Texas,yes,not on backorder,cellular
+101,High,>125%,"428,00 %",yes,Texas,yes,not on backorder,telephone
+4,High,>125%,"56,00 %",yes,Texas,yes,not on backorder,unknown
+1345,High,>125%,"6588,00 %",yes,Washington,no,not on backorder,cellular
+26,High,>125%,"226,00 %",yes,Washington,no,not on backorder,telephone
+34,High,>125%,"150,00 %",yes,Washington,no,not on backorder,unknown
+2128,High,>125%,"9358,00 %",yes,Washington,yes,not on backorder,cellular
+95,High,>125%,"382,00 %",yes,Washington,yes,not on backorder,telephone
+46,High,>125%,"136,00 %",yes,Washington,yes,not on backorder,unknown
+6222,High,Between 100%-125%,"59164,00 %",no,California,no,not on backorder,cellular
+1234,High,Between 100%-125%,"10986,00 %",no,California,no,not on backorder,telephone
+18734,High,Between 100%-125%,"120790,00 %",no,California,no,not on backorder,unknown
+1458,High,Between 100%-125%,"9190,00 %",no,California,yes,not on backorder,cellular
+260,High,Between 100%-125%,"2068,00 %",no,California,yes,not on backorder,telephone
+2788,High,Between 100%-125%,"19986,00 %",no,California,yes,not on backorder,unknown
+3741,High,Between 100%-125%,"25568,00 %",no,Florida,no,not on backorder,cellular
+427,High,Between 100%-125%,"2994,00 %",no,Florida,no,not on backorder,telephone
+501,High,Between 100%-125%,"4230,00 %",no,Florida,yes,not on backorder,cellular
+115,High,Between 100%-125%,"980,00 %",no,Florida,yes,not on backorder,telephone
+51,High,Between 100%-125%,"290,00 %",no,Georgia,no,not on backorder,cellular
+156,High,Between 100%-125%,"852,00 %",no,Georgia,yes,not on backorder,cellular
+53,High,Between 100%-125%,"558,00 %",no,Georgia,yes,not on backorder,telephone
+1805,High,Between 100%-125%,"6388,00 %",no,Illinois,no,not on backorder,cellular
+235,High,Between 100%-125%,"820,00 %",no,Illinois,no,not on backorder,telephone
+7,High,Between 100%-125%,"102,00 %",no,Illinois,no,not on backorder,unknown
+2234,High,Between 100%-125%,"8296,00 %",no,Illinois,yes,not on backorder,cellular
+223,High,Between 100%-125%,"870,00 %",no,Illinois,yes,not on backorder,telephone
+160,High,Between 100%-125%,"894,00 %",no,Massachusetts,no,not on backorder,cellular
+2,High,Between 100%-125%,"108,00 %",no,Massachusetts,no,not on backorder,telephone
+1,High,Between 100%-125%,"114,00 %",no,Massachusetts,no,not on backorder,unknown
+369,High,Between 100%-125%,"2346,00 %",no,Massachusetts,yes,not on backorder,cellular
+55,High,Between 100%-125%,"462,00 %",no,Massachusetts,yes,not on backorder,telephone
+619,High,Between 100%-125%,"12548,00 %",no,New Jersey,no,not on backorder,cellular
+82,High,Between 100%-125%,"1358,00 %",no,New Jersey,no,not on backorder,telephone
+1024,High,Between 100%-125%,"17740,00 %",no,New Jersey,yes,not on backorder,cellular
+376,High,Between 100%-125%,"4810,00 %",no,New Jersey,yes,not on backorder,telephone
+7482,High,Between 100%-125%,"35280,00 %",no,New York,no,not on backorder,cellular
+2219,High,Between 100%-125%,"10676,00 %",no,New York,no,not on backorder,telephone
+42,High,Between 100%-125%,"294,00 %",no,New York,no,not on backorder,unknown
+7574,High,Between 100%-125%,"35720,00 %",no,New York,yes,not on backorder,cellular
+3247,High,Between 100%-125%,"14196,00 %",no,New York,yes,not on backorder,telephone
+139,High,Between 100%-125%,"2632,00 %",no,New York,yes,not on backorder,unknown
+213,High,Between 100%-125%,"1460,00 %",no,Ohio,no,not on backorder,cellular
+36,High,Between 100%-125%,"204,00 %",no,Ohio,no,not on backorder,telephone
+43,High,Between 100%-125%,"324,00 %",no,Ohio,no,not on backorder,unknown
+713,High,Between 100%-125%,"4724,00 %",no,Ohio,yes,not on backorder,cellular
+304,High,Between 100%-125%,"1752,00 %",no,Ohio,yes,not on backorder,telephone
+65,High,Between 100%-125%,"438,00 %",no,Ohio,yes,not on backorder,unknown
+77,High,Between 100%-125%,"1416,00 %",no,Oregon,no,not on backorder,cellular
+16,High,Between 100%-125%,"98,00 %",no,Oregon,no,not on backorder,telephone
+2525,High,Between 100%-125%,"24172,00 %",no,Oregon,no,not on backorder,unknown
+418,High,Between 100%-125%,"6996,00 %",no,Oregon,yes,not on backorder,cellular
+164,High,Between 100%-125%,"3024,00 %",no,Oregon,yes,not on backorder,telephone
+11166,High,Between 100%-125%,"89748,00 %",no,Oregon,yes,not on backorder,unknown
+86,High,Between 100%-125%,"698,00 %",no,Pennsylvania,no,not on backorder,cellular
+8,High,Between 100%-125%,"114,00 %",no,Pennsylvania,no,not on backorder,telephone
+322,High,Between 100%-125%,"2744,00 %",no,Pennsylvania,yes,not on backorder,cellular
+41,High,Between 100%-125%,"434,00 %",no,Pennsylvania,yes,not on backorder,telephone
+17,High,Between 100%-125%,"212,00 %",no,Pennsylvania,yes,not on backorder,unknown
+3967,High,Between 100%-125%,"23116,00 %",no,Texas,no,not on backorder,cellular
+713,High,Between 100%-125%,"4386,00 %",no,Texas,no,not on backorder,telephone
+89,High,Between 100%-125%,"628,00 %",no,Texas,no,not on backorder,unknown
+4818,High,Between 100%-125%,"28342,00 %",no,Texas,yes,not on backorder,cellular
+753,High,Between 100%-125%,"4868,00 %",no,Texas,yes,not on backorder,telephone
+99,High,Between 100%-125%,"724,00 %",no,Texas,yes,not on backorder,unknown
+2313,High,Between 100%-125%,"16182,00 %",no,Washington,no,not on backorder,cellular
+127,High,Between 100%-125%,"722,00 %",no,Washington,no,not on backorder,telephone
+17793,High,Between 100%-125%,"116130,00 %",no,Washington,yes,not on backorder,cellular
+1035,High,Between 100%-125%,"5878,00 %",no,Washington,yes,not on backorder,telephone
+51,High,Between 100%-125%,"298,00 %",no,Washington,yes,not on backorder,unknown
+1171,High,Between 100%-125%,"11244,00 %",yes,California,no,not on backorder,cellular
+222,High,Between 100%-125%,"2018,00 %",yes,California,no,not on backorder,telephone
+3655,High,Between 100%-125%,"20934,00 %",yes,California,no,not on backorder,unknown
+180,High,Between 100%-125%,"1056,00 %",yes,California,yes,not on backorder,cellular
+53,High,Between 100%-125%,"320,00 %",yes,California,yes,not on backorder,telephone
+362,High,Between 100%-125%,"2230,00 %",yes,California,yes,not on backorder,unknown
+765,High,Between 100%-125%,"5448,00 %",yes,Florida,no,not on backorder,cellular
+54,High,Between 100%-125%,"324,00 %",yes,Florida,no,not on backorder,telephone
+40,High,Between 100%-125%,"436,00 %",yes,Florida,yes,not on backorder,cellular
+55,High,Between 100%-125%,"314,00 %",yes,Georgia,yes,not on backorder,cellular
+14,High,Between 100%-125%,"114,00 %",yes,Georgia,yes,not on backorder,telephone
+810,High,Between 100%-125%,"3004,00 %",yes,Illinois,no,not on backorder,cellular
+57,High,Between 100%-125%,"218,00 %",yes,Illinois,no,not on backorder,telephone
+412,High,Between 100%-125%,"1516,00 %",yes,Illinois,yes,not on backorder,cellular
+118,High,Between 100%-125%,"442,00 %",yes,Illinois,yes,not on backorder,telephone
+11,High,Between 100%-125%,"100,00 %",yes,Illinois,yes,not on backorder,unknown
+26,High,Between 100%-125%,"96,00 %",yes,Massachusetts,no,not on backorder,cellular
+178,High,Between 100%-125%,"3942,00 %",yes,New Jersey,no,not on backorder,cellular
+24,High,Between 100%-125%,"302,00 %",yes,New Jersey,no,not on backorder,telephone
+190,High,Between 100%-125%,"3784,00 %",yes,New Jersey,yes,not on backorder,cellular
+12,High,Between 100%-125%,"446,00 %",yes,New Jersey,yes,not on backorder,telephone
+2295,High,Between 100%-125%,"10684,00 %",yes,New York,no,not on backorder,cellular
+443,High,Between 100%-125%,"2234,00 %",yes,New York,no,not on backorder,telephone
+23,High,Between 100%-125%,"398,00 %",yes,New York,no,not on backorder,unknown
+4980,High,Between 100%-125%,"25302,00 %",yes,New York,yes,not on backorder,cellular
+1268,High,Between 100%-125%,"6402,00 %",yes,New York,yes,not on backorder,telephone
+162,High,Between 100%-125%,"4322,00 %",yes,New York,yes,not on backorder,unknown
+138,High,Between 100%-125%,"704,00 %",yes,Ohio,no,not on backorder,cellular
+19,High,Between 100%-125%,"108,00 %",yes,Ohio,no,not on backorder,telephone
+25,High,Between 100%-125%,"300,00 %",yes,Ohio,yes,not on backorder,cellular
+57,High,Between 100%-125%,"526,00 %",yes,Oregon,no,not on backorder,cellular
+855,High,Between 100%-125%,"5696,00 %",yes,Oregon,no,not on backorder,unknown
+19,High,Between 100%-125%,"312,00 %",yes,Oregon,yes,not on backorder,cellular
+1,High,Between 100%-125%,"106,00 %",yes,Oregon,yes,not on backorder,telephone
+1806,High,Between 100%-125%,"12606,00 %",yes,Oregon,yes,not on backorder,unknown
+3,High,Between 100%-125%,"110,00 %",yes,Pennsylvania,no,not on backorder,cellular
+7,High,Between 100%-125%,"114,00 %",yes,Pennsylvania,yes,not on backorder,cellular
+28,High,Between 100%-125%,"110,00 %",yes,Pennsylvania,yes,not on backorder,telephone
+1522,High,Between 100%-125%,"8742,00 %",yes,Texas,no,not on backorder,cellular
+122,High,Between 100%-125%,"706,00 %",yes,Texas,no,not on backorder,telephone
+51,High,Between 100%-125%,"300,00 %",yes,Texas,no,not on backorder,unknown
+1290,High,Between 100%-125%,"7556,00 %",yes,Texas,yes,not on backorder,cellular
+51,High,Between 100%-125%,"324,00 %",yes,Texas,yes,not on backorder,telephone
+52,High,Between 100%-125%,"330,00 %",yes,Texas,yes,not on backorder,unknown
+737,High,Between 100%-125%,"5144,00 %",yes,Washington,no,not on backorder,cellular
+40,High,Between 100%-125%,"302,00 %",yes,Washington,no,not on backorder,telephone
+1559,High,Between 100%-125%,"11216,00 %",yes,Washington,yes,not on backorder,cellular
+86,High,Between 100%-125%,"540,00 %",yes,Washington,yes,not on backorder,telephone
+24,High,Between 100%-125%,"214,00 %",yes,Washington,yes,not on backorder,unknown
+26,Low,<75%,"132,00 %",no,California,no,on backorder,cellular
+217,Low,<75%,"2050,00 %",no,California,yes,on backorder,cellular
+88,Low,<75%,"1196,00 %",no,California,yes,on backorder,telephone
+78,Low,<75%,"536,00 %",no,Florida,no,on backorder,cellular
+23,Low,<75%,"152,00 %",no,Florida,no,on backorder,telephone
+533,Low,<75%,"3342,00 %",no,Florida,yes,on backorder,cellular
+237,Low,<75%,"1912,00 %",no,Florida,yes,on backorder,telephone
+10,Low,<75%,"138,00 %",no,Georgia,no,on backorder,cellular
+170,Low,<75%,"1690,00 %",no,Georgia,yes,on backorder,cellular
+106,Low,<75%,"1212,00 %",no,Georgia,yes,on backorder,telephone
+27,Low,<75%,"122,00 %",no,Illinois,no,on backorder,cellular
+352,Low,<75%,"2412,00 %",no,Illinois,yes,on backorder,cellular
+122,Low,<75%,"1028,00 %",no,Illinois,yes,on backorder,telephone
+3,Low,<75%,"124,00 %",no,Massachusetts,no,on backorder,cellular
+289,Low,<75%,"3040,00 %",no,Massachusetts,yes,on backorder,cellular
+166,Low,<75%,"2108,00 %",no,Massachusetts,yes,on backorder,telephone
+66,Low,<75%,"550,00 %",no,New Jersey,no,on backorder,cellular
+587,Low,<75%,"6054,00 %",no,New Jersey,yes,on backorder,cellular
+189,Low,<75%,"2162,00 %",no,New Jersey,yes,on backorder,telephone
+29,Low,<75%,"122,00 %",no,New York,no,on backorder,cellular
+15,Low,<75%,"136,00 %",no,New York,no,on backorder,telephone
+369,Low,<75%,"3462,00 %",no,New York,yes,on backorder,cellular
+228,Low,<75%,"2054,00 %",no,New York,yes,on backorder,telephone
+153,Low,<75%,"1082,00 %",no,Ohio,no,on backorder,cellular
+738,Low,<75%,"4834,00 %",no,Ohio,yes,on backorder,cellular
+301,Low,<75%,"2252,00 %",no,Ohio,yes,on backorder,telephone
+22,Low,<75%,"128,00 %",no,Oregon,no,on backorder,cellular
+247,Low,<75%,"1858,00 %",no,Oregon,yes,on backorder,cellular
+88,Low,<75%,"724,00 %",no,Oregon,yes,on backorder,telephone
+37,Low,<75%,"408,00 %",no,Pennsylvania,no,on backorder,cellular
+392,Low,<75%,"4256,00 %",no,Pennsylvania,yes,on backorder,cellular
+173,Low,<75%,"2112,00 %",no,Pennsylvania,yes,on backorder,telephone
+36,Low,<75%,"396,00 %",no,Texas,no,on backorder,cellular
+269,Low,<75%,"2714,00 %",no,Texas,yes,on backorder,cellular
+104,Low,<75%,"1296,00 %",no,Texas,yes,on backorder,telephone
+101,Low,<75%,"756,00 %",no,Washington,no,on backorder,cellular
+522,Low,<75%,"5432,00 %",no,Washington,yes,on backorder,cellular
+168,Low,<75%,"1804,00 %",no,Washington,yes,on backorder,telephone
+10,Low,<75%,"122,00 %",yes,Massachusetts,no,on backorder,cellular
+12,Low,<75%,"144,00 %",yes,Massachusetts,yes,on backorder,cellular
+18,Low,<75%,"132,00 %",yes,New Jersey,yes,on backorder,cellular
+9,Low,<75%,"124,00 %",yes,Pennsylvania,no,on backorder,cellular
+6,Low,<75%,"122,00 %",yes,Washington,no,on backorder,cellular
+21,Low,<75%,"130,00 %",yes,Washington,yes,on backorder,cellular
+3759,Low,>125%,"19944,00 %",no,California,no,on backorder,cellular
+62,Low,>125%,"354,00 %",no,California,no,on backorder,telephone
+3383,Low,>125%,"11248,00 %",no,California,no,on backorder,unknown
+1961,Low,>125%,"7726,00 %",no,California,yes,on backorder,cellular
+36,Low,>125%,"320,00 %",no,California,yes,on backorder,telephone
+167,Low,>125%,"712,00 %",no,California,yes,on backorder,unknown
+1550,Low,>125%,"5504,00 %",no,Florida,no,on backorder,cellular
+55,Low,>125%,"232,00 %",no,Florida,no,on backorder,telephone
+27,Low,>125%,"60,00 %",no,Florida,no,on backorder,unknown
+4366,Low,>125%,"11952,00 %",no,Florida,yes,on backorder,cellular
+132,Low,>125%,"392,00 %",no,Florida,yes,on backorder,telephone
+39,Low,>125%,"238,00 %",no,Florida,yes,on backorder,unknown
+163,Low,>125%,"774,00 %",no,Georgia,no,on backorder,cellular
+634,Low,>125%,"2678,00 %",no,Georgia,yes,on backorder,cellular
+28,Low,>125%,"54,00 %",no,Georgia,yes,on backorder,telephone
+154,Low,>125%,"540,00 %",no,Illinois,no,on backorder,cellular
+7,Low,>125%,"90,00 %",no,Illinois,no,on backorder,unknown
+1392,Low,>125%,"3968,00 %",no,Illinois,yes,on backorder,cellular
+30,Low,>125%,"84,00 %",no,Illinois,yes,on backorder,telephone
+449,Low,>125%,"2560,00 %",no,Massachusetts,no,on backorder,cellular
+1433,Low,>125%,"6518,00 %",no,Massachusetts,yes,on backorder,cellular
+38,Low,>125%,"258,00 %",no,Massachusetts,yes,on backorder,telephone
+22,Low,>125%,"148,00 %",no,Massachusetts,yes,on backorder,unknown
+857,Low,>125%,"5746,00 %",no,New Jersey,no,on backorder,cellular
+40,Low,>125%,"110,00 %",no,New Jersey,no,on backorder,telephone
+1680,Low,>125%,"10292,00 %",no,New Jersey,yes,on backorder,cellular
+145,Low,>125%,"832,00 %",no,New Jersey,yes,on backorder,telephone
+18,Low,>125%,"68,00 %",no,New Jersey,yes,on backorder,unknown
+2091,Low,>125%,"8572,00 %",no,New York,no,on backorder,cellular
+158,Low,>125%,"582,00 %",no,New York,no,on backorder,telephone
+5,Low,>125%,"170,00 %",no,New York,no,on backorder,unknown
+2114,Low,>125%,"9668,00 %",no,New York,yes,on backorder,cellular
+53,Low,>125%,"332,00 %",no,New York,yes,on backorder,telephone
+19,Low,>125%,"312,00 %",no,New York,yes,on backorder,unknown
+368,Low,>125%,"1402,00 %",no,Ohio,no,on backorder,cellular
+213,Low,>125%,"676,00 %",no,Ohio,no,on backorder,telephone
+190,Low,>125%,"542,00 %",no,Ohio,no,on backorder,unknown
+1892,Low,>125%,"6986,00 %",no,Ohio,yes,on backorder,cellular
+282,Low,>125%,"816,00 %",no,Ohio,yes,on backorder,telephone
+37,Low,>125%,"146,00 %",no,Ohio,yes,on backorder,unknown
+391,Low,>125%,"3064,00 %",no,Oregon,no,on backorder,cellular
+235,Low,>125%,"2180,00 %",no,Oregon,no,on backorder,unknown
+1652,Low,>125%,"10884,00 %",no,Oregon,yes,on backorder,cellular
+55,Low,>125%,"308,00 %",no,Oregon,yes,on backorder,telephone
+171,Low,>125%,"668,00 %",no,Oregon,yes,on backorder,unknown
+309,Low,>125%,"2098,00 %",no,Pennsylvania,no,on backorder,cellular
+29,Low,>125%,"68,00 %",no,Pennsylvania,no,on backorder,telephone
+1405,Low,>125%,"7434,00 %",no,Pennsylvania,yes,on backorder,cellular
+65,Low,>125%,"282,00 %",no,Pennsylvania,yes,on backorder,telephone
+1657,Low,>125%,"6574,00 %",no,Texas,no,on backorder,cellular
+46,Low,>125%,"278,00 %",no,Texas,no,on backorder,telephone
+43,Low,>125%,"208,00 %",no,Texas,no,on backorder,unknown
+1580,Low,>125%,"6830,00 %",no,Texas,yes,on backorder,cellular
+125,Low,>125%,"556,00 %",no,Texas,yes,on backorder,telephone
+81,Low,>125%,"554,00 %",no,Texas,yes,on backorder,unknown
+1153,Low,>125%,"5932,00 %",no,Washington,no,on backorder,cellular
+27,Low,>125%,"56,00 %",no,Washington,no,on backorder,telephone
+29,Low,>125%,"128,00 %",no,Washington,no,on backorder,unknown
+3728,Low,>125%,"19056,00 %",no,Washington,yes,on backorder,cellular
+166,Low,>125%,"642,00 %",no,Washington,yes,on backorder,telephone
+21,Low,>125%,"134,00 %",no,Washington,yes,on backorder,unknown
+679,Low,>125%,"3648,00 %",yes,California,no,on backorder,cellular
+448,Low,>125%,"1558,00 %",yes,California,no,on backorder,unknown
+44,Low,>125%,"180,00 %",yes,California,yes,on backorder,cellular
+4,Low,>125%,"58,00 %",yes,California,yes,on backorder,telephone
+194,Low,>125%,"688,00 %",yes,Florida,no,on backorder,cellular
+129,Low,>125%,"714,00 %",yes,Florida,yes,on backorder,cellular
+9,Low,>125%,"82,00 %",yes,Georgia,no,on backorder,telephone
+101,Low,>125%,"248,00 %",yes,Illinois,no,on backorder,cellular
+40,Low,>125%,"114,00 %",yes,Illinois,yes,on backorder,cellular
+28,Low,>125%,"62,00 %",yes,Illinois,yes,on backorder,telephone
+44,Low,>125%,"164,00 %",yes,Massachusetts,no,on backorder,cellular
+15,Low,>125%,"82,00 %",yes,Massachusetts,no,on backorder,telephone
+8,Low,>125%,"116,00 %",yes,Massachusetts,yes,on backorder,cellular
+73,Low,>125%,"616,00 %",yes,New Jersey,no,on backorder,cellular
+23,Low,>125%,"64,00 %",yes,New Jersey,no,on backorder,unknown
+93,Low,>125%,"478,00 %",yes,New Jersey,yes,on backorder,cellular
+400,Low,>125%,"1868,00 %",yes,New York,no,on backorder,cellular
+746,Low,>125%,"3454,00 %",yes,New York,yes,on backorder,cellular
+16,Low,>125%,"142,00 %",yes,New York,yes,on backorder,telephone
+6,Low,>125%,"124,00 %",yes,New York,yes,on backorder,unknown
+43,Low,>125%,"144,00 %",yes,Ohio,no,on backorder,cellular
+94,Low,>125%,"310,00 %",yes,Ohio,no,on backorder,telephone
+42,Low,>125%,"154,00 %",yes,Ohio,no,on backorder,unknown
+74,Low,>125%,"236,00 %",yes,Ohio,yes,on backorder,cellular
+22,Low,>125%,"56,00 %",yes,Ohio,yes,on backorder,telephone
+83,Low,>125%,"482,00 %",yes,Oregon,no,on backorder,cellular
+78,Low,>125%,"492,00 %",yes,Oregon,no,on backorder,unknown
+16,Low,>125%,"338,00 %",yes,Oregon,yes,on backorder,cellular
+80,Low,>125%,"174,00 %",yes,Oregon,yes,on backorder,unknown
+48,Low,>125%,"212,00 %",yes,Pennsylvania,no,on backorder,cellular
+14,Low,>125%,"82,00 %",yes,Pennsylvania,no,on backorder,telephone
+10,Low,>125%,"136,00 %",yes,Pennsylvania,yes,on backorder,cellular
+8,Low,>125%,"60,00 %",yes,Pennsylvania,yes,on backorder,telephone
+291,Low,>125%,"1042,00 %",yes,Texas,no,on backorder,cellular
+42,Low,>125%,"166,00 %",yes,Texas,no,on backorder,telephone
+241,Low,>125%,"864,00 %",yes,Texas,yes,on backorder,cellular
+74,Low,>125%,"352,00 %",yes,Washington,no,on backorder,cellular
+31,Low,>125%,"90,00 %",yes,Washington,no,on backorder,telephone
+123,Low,>125%,"712,00 %",yes,Washington,yes,on backorder,cellular
+31,Low,>125%,"68,00 %",yes,Washington,yes,on backorder,unknown
+729,Low,Between 100%-125%,"5896,00 %",no,California,no,on backorder,cellular
+39,Low,Between 100%-125%,"418,00 %",no,California,no,on backorder,telephone
+691,Low,Between 100%-125%,"4100,00 %",no,California,no,on backorder,unknown
+687,Low,Between 100%-125%,"4526,00 %",no,California,yes,on backorder,cellular
+95,Low,Between 100%-125%,"556,00 %",no,California,yes,on backorder,telephone
+95,Low,Between 100%-125%,"630,00 %",no,California,yes,on backorder,unknown
+501,Low,Between 100%-125%,"2680,00 %",no,Florida,no,on backorder,cellular
+25,Low,Between 100%-125%,"222,00 %",no,Florida,no,on backorder,telephone
+1142,Low,Between 100%-125%,"5500,00 %",no,Florida,yes,on backorder,cellular
+107,Low,Between 100%-125%,"732,00 %",no,Florida,yes,on backorder,telephone
+1,Low,Between 100%-125%,"120,00 %",no,Florida,yes,on backorder,unknown
+51,Low,Between 100%-125%,"534,00 %",no,Georgia,no,on backorder,cellular
+197,Low,Between 100%-125%,"1494,00 %",no,Georgia,yes,on backorder,cellular
+46,Low,Between 100%-125%,"300,00 %",no,Georgia,yes,on backorder,telephone
+156,Low,Between 100%-125%,"654,00 %",no,Illinois,no,on backorder,cellular
+640,Low,Between 100%-125%,"2926,00 %",no,Illinois,yes,on backorder,cellular
+39,Low,Between 100%-125%,"216,00 %",no,Illinois,yes,on backorder,telephone
+178,Low,Between 100%-125%,"964,00 %",no,Massachusetts,no,on backorder,cellular
+496,Low,Between 100%-125%,"4438,00 %",no,Massachusetts,yes,on backorder,cellular
+52,Low,Between 100%-125%,"326,00 %",no,Massachusetts,yes,on backorder,telephone
+30,Low,Between 100%-125%,"112,00 %",no,Massachusetts,yes,on backorder,unknown
+167,Low,Between 100%-125%,"1874,00 %",no,New Jersey,no,on backorder,cellular
+697,Low,Between 100%-125%,"6640,00 %",no,New Jersey,yes,on backorder,cellular
+42,Low,Between 100%-125%,"880,00 %",no,New Jersey,yes,on backorder,telephone
+33,Low,Between 100%-125%,"202,00 %",no,New Jersey,yes,on backorder,unknown
+485,Low,Between 100%-125%,"3124,00 %",no,New York,no,on backorder,cellular
+48,Low,Between 100%-125%,"412,00 %",no,New York,no,on backorder,telephone
+636,Low,Between 100%-125%,"4470,00 %",no,New York,yes,on backorder,cellular
+151,Low,Between 100%-125%,"1280,00 %",no,New York,yes,on backorder,telephone
+10,Low,Between 100%-125%,"106,00 %",no,New York,yes,on backorder,unknown
+154,Low,Between 100%-125%,"626,00 %",no,Ohio,no,on backorder,cellular
+88,Low,Between 100%-125%,"426,00 %",no,Ohio,no,on backorder,telephone
+65,Low,Between 100%-125%,"318,00 %",no,Ohio,no,on backorder,unknown
+945,Low,Between 100%-125%,"5168,00 %",no,Ohio,yes,on backorder,cellular
+203,Low,Between 100%-125%,"1100,00 %",no,Ohio,yes,on backorder,telephone
+47,Low,Between 100%-125%,"214,00 %",no,Ohio,yes,on backorder,unknown
+84,Low,Between 100%-125%,"1126,00 %",no,Oregon,no,on backorder,cellular
+32,Low,Between 100%-125%,"210,00 %",no,Oregon,no,on backorder,telephone
+3,Low,Between 100%-125%,"94,00 %",no,Oregon,no,on backorder,unknown
+525,Low,Between 100%-125%,"5954,00 %",no,Oregon,yes,on backorder,cellular
+70,Low,Between 100%-125%,"900,00 %",no,Oregon,yes,on backorder,telephone
+67,Low,Between 100%-125%,"398,00 %",no,Oregon,yes,on backorder,unknown
+120,Low,Between 100%-125%,"1198,00 %",no,Pennsylvania,no,on backorder,cellular
+25,Low,Between 100%-125%,"204,00 %",no,Pennsylvania,no,on backorder,telephone
+31,Low,Between 100%-125%,"186,00 %",no,Pennsylvania,no,on backorder,unknown
+533,Low,Between 100%-125%,"4350,00 %",no,Pennsylvania,yes,on backorder,cellular
+31,Low,Between 100%-125%,"216,00 %",no,Pennsylvania,yes,on backorder,telephone
+6,Low,Between 100%-125%,"104,00 %",no,Pennsylvania,yes,on backorder,unknown
+360,Low,Between 100%-125%,"2070,00 %",no,Texas,no,on backorder,cellular
+30,Low,Between 100%-125%,"322,00 %",no,Texas,no,on backorder,telephone
+13,Low,Between 100%-125%,"98,00 %",no,Texas,no,on backorder,unknown
+905,Low,Between 100%-125%,"5458,00 %",no,Texas,yes,on backorder,cellular
+121,Low,Between 100%-125%,"998,00 %",no,Texas,yes,on backorder,telephone
+5,Low,Between 100%-125%,"118,00 %",no,Texas,yes,on backorder,unknown
+380,Low,Between 100%-125%,"3092,00 %",no,Washington,no,on backorder,cellular
+2267,Low,Between 100%-125%,"15554,00 %",no,Washington,yes,on backorder,cellular
+59,Low,Between 100%-125%,"648,00 %",no,Washington,yes,on backorder,telephone
+182,Low,Between 100%-125%,"1768,00 %",yes,California,no,on backorder,cellular
+98,Low,Between 100%-125%,"760,00 %",yes,California,no,on backorder,unknown
+27,Low,Between 100%-125%,"108,00 %",yes,California,yes,on backorder,cellular
+8,Low,Between 100%-125%,"94,00 %",yes,California,yes,on backorder,telephone
+41,Low,Between 100%-125%,"222,00 %",yes,Florida,no,on backorder,cellular
+30,Low,Between 100%-125%,"108,00 %",yes,Florida,yes,on backorder,cellular
+17,Low,Between 100%-125%,"102,00 %",yes,Georgia,yes,on backorder,cellular
+22,Low,Between 100%-125%,"106,00 %",yes,Georgia,yes,on backorder,telephone
+42,Low,Between 100%-125%,"218,00 %",yes,Illinois,no,on backorder,cellular
+23,Low,Between 100%-125%,"306,00 %",yes,Massachusetts,no,on backorder,cellular
+22,Low,Between 100%-125%,"104,00 %",yes,Massachusetts,yes,on backorder,unknown
+33,Low,Between 100%-125%,"324,00 %",yes,New Jersey,no,on backorder,cellular
+107,Low,Between 100%-125%,"722,00 %",yes,New Jersey,yes,on backorder,cellular
+2,Low,Between 100%-125%,"92,00 %",yes,New Jersey,yes,on backorder,telephone
+30,Low,Between 100%-125%,"212,00 %",yes,New York,no,on backorder,cellular
+2,Low,Between 100%-125%,"106,00 %",yes,New York,no,on backorder,unknown
+253,Low,Between 100%-125%,"1798,00 %",yes,New York,yes,on backorder,cellular
+21,Low,Between 100%-125%,"112,00 %",yes,New York,yes,on backorder,telephone
+55,Low,Between 100%-125%,"302,00 %",yes,Ohio,no,on backorder,cellular
+17,Low,Between 100%-125%,"94,00 %",yes,Ohio,no,on backorder,telephone
+69,Low,Between 100%-125%,"304,00 %",yes,Ohio,yes,on backorder,cellular
+17,Low,Between 100%-125%,"92,00 %",yes,Ohio,yes,on backorder,telephone
+29,Low,Between 100%-125%,"116,00 %",yes,Ohio,yes,on backorder,unknown
+27,Low,Between 100%-125%,"298,00 %",yes,Oregon,no,on backorder,cellular
+20,Low,Between 100%-125%,"114,00 %",yes,Oregon,no,on backorder,unknown
+31,Low,Between 100%-125%,"400,00 %",yes,Oregon,yes,on backorder,cellular
+80,Low,Between 100%-125%,"428,00 %",yes,Oregon,yes,on backorder,unknown
+39,Low,Between 100%-125%,"196,00 %",yes,Pennsylvania,no,on backorder,cellular
+81,Low,Between 100%-125%,"408,00 %",yes,Texas,no,on backorder,cellular
+18,Low,Between 100%-125%,"108,00 %",yes,Texas,no,on backorder,telephone
+60,Low,Between 100%-125%,"420,00 %",yes,Texas,yes,on backorder,cellular
+25,Low,Between 100%-125%,"204,00 %",yes,Texas,yes,on backorder,telephone
+17,Low,Between 100%-125%,"198,00 %",yes,Washington,no,on backorder,cellular
+99,Low,Between 100%-125%,"792,00 %",yes,Washington,yes,on backorder,cellular
+37,Medium,<75%,"270,00 %",no,California,no,not on backorder,cellular
+15,Medium,<75%,"122,00 %",no,California,no,not on backorder,unknown
+129,Medium,<75%,"1212,00 %",no,California,yes,not on backorder,cellular
+118,Medium,<75%,"1236,00 %",no,California,yes,not on backorder,telephone
+55,Medium,<75%,"406,00 %",no,Florida,no,not on backorder,cellular
+14,Medium,<75%,"122,00 %",no,Florida,no,on backorder,cellular
+548,Medium,<75%,"3424,00 %",no,Florida,yes,not on backorder,cellular
+393,Medium,<75%,"2590,00 %",no,Florida,yes,not on backorder,telephone
+150,Medium,<75%,"1306,00 %",no,Florida,yes,on backorder,cellular
+83,Medium,<75%,"738,00 %",no,Florida,yes,on backorder,telephone
+135,Medium,<75%,"1028,00 %",no,Massachusetts,yes,not on backorder,cellular
+82,Medium,<75%,"766,00 %",no,Massachusetts,yes,not on backorder,telephone
+3,Medium,<75%,"124,00 %",no,New Jersey,yes,not on backorder,cellular
+3,Medium,<75%,"138,00 %",no,New Jersey,yes,not on backorder,telephone
+15,Medium,<75%,"404,00 %",no,New York,yes,not on backorder,cellular
+1,Medium,<75%,"144,00 %",no,New York,yes,not on backorder,telephone
+90,Medium,<75%,"436,00 %",no,Ohio,yes,on backorder,cellular
+130,Medium,<75%,"1112,00 %",no,Oregon,yes,not on backorder,cellular
+78,Medium,<75%,"870,00 %",no,Oregon,yes,not on backorder,telephone
+19,Medium,<75%,"122,00 %",no,Oregon,yes,not on backorder,unknown
+74,Medium,<75%,"838,00 %",no,Texas,yes,on backorder,cellular
+26,Medium,<75%,"122,00 %",no,Washington,yes,not on backorder,cellular
+10,Medium,<75%,"244,00 %",no,Washington,yes,on backorder,cellular
+6,Medium,<75%,"122,00 %",yes,California,no,not on backorder,unknown
+1,Medium,<75%,"122,00 %",yes,Florida,no,not on backorder,cellular
+4,Medium,<75%,"124,00 %",yes,Oregon,no,not on backorder,cellular
+3,Medium,<75%,"122,00 %",yes,Oregon,no,not on backorder,unknown
+4154,Medium,>125%,"20924,00 %",no,California,no,not on backorder,cellular
+304,Medium,>125%,"1650,00 %",no,California,no,not on backorder,telephone
+16669,Medium,>125%,"66402,00 %",no,California,no,not on backorder,unknown
+163,Medium,>125%,"478,00 %",no,California,no,on backorder,cellular
+102,Medium,>125%,"732,00 %",no,California,no,on backorder,unknown
+800,Medium,>125%,"4658,00 %",no,California,yes,not on backorder,cellular
+44,Medium,>125%,"432,00 %",no,California,yes,not on backorder,telephone
+1948,Medium,>125%,"7358,00 %",no,California,yes,not on backorder,unknown
+441,Medium,>125%,"1128,00 %",no,California,yes,on backorder,cellular
+27,Medium,>125%,"58,00 %",no,California,yes,on backorder,telephone
+1676,Medium,>125%,"4344,00 %",no,Florida,no,not on backorder,cellular
+42,Medium,>125%,"154,00 %",no,Florida,no,not on backorder,telephone
+911,Medium,>125%,"4052,00 %",no,Florida,no,on backorder,cellular
+15,Medium,>125%,"86,00 %",no,Florida,no,on backorder,telephone
+3366,Medium,>125%,"8470,00 %",no,Florida,yes,not on backorder,cellular
+350,Medium,>125%,"818,00 %",no,Florida,yes,not on backorder,telephone
+17,Medium,>125%,"42,00 %",no,Florida,yes,not on backorder,unknown
+585,Medium,>125%,"2462,00 %",no,Florida,yes,on backorder,cellular
+16,Medium,>125%,"158,00 %",no,Georgia,no,not on backorder,telephone
+11,Medium,>125%,"68,00 %",no,Georgia,yes,not on backorder,cellular
+20,Medium,>125%,"182,00 %",no,Georgia,yes,not on backorder,telephone
+49,Medium,>125%,"184,00 %",no,Georgia,yes,not on backorder,unknown
+1461,Medium,>125%,"3868,00 %",no,Illinois,no,not on backorder,cellular
+170,Medium,>125%,"460,00 %",no,Illinois,no,not on backorder,telephone
+4154,Medium,>125%,"10054,00 %",no,Illinois,yes,not on backorder,cellular
+673,Medium,>125%,"1678,00 %",no,Illinois,yes,not on backorder,telephone
+205,Medium,>125%,"648,00 %",no,Massachusetts,no,not on backorder,cellular
+31,Medium,>125%,"68,00 %",no,Massachusetts,no,not on backorder,unknown
+386,Medium,>125%,"1264,00 %",no,Massachusetts,yes,not on backorder,cellular
+83,Medium,>125%,"262,00 %",no,Massachusetts,yes,not on backorder,telephone
+553,Medium,>125%,"10458,00 %",no,New Jersey,no,not on backorder,cellular
+34,Medium,>125%,"696,00 %",no,New Jersey,no,not on backorder,telephone
+475,Medium,>125%,"8506,00 %",no,New Jersey,yes,not on backorder,cellular
+45,Medium,>125%,"862,00 %",no,New Jersey,yes,not on backorder,telephone
+8894,Medium,>125%,"36424,00 %",no,New York,no,not on backorder,cellular
+553,Medium,>125%,"2698,00 %",no,New York,no,not on backorder,telephone
+37,Medium,>125%,"508,00 %",no,New York,no,not on backorder,unknown
+430,Medium,>125%,"1094,00 %",no,New York,no,on backorder,cellular
+55,Medium,>125%,"132,00 %",no,New York,no,on backorder,telephone
+4449,Medium,>125%,"20772,00 %",no,New York,yes,not on backorder,cellular
+637,Medium,>125%,"2976,00 %",no,New York,yes,not on backorder,telephone
+48,Medium,>125%,"456,00 %",no,New York,yes,not on backorder,unknown
+503,Medium,>125%,"1294,00 %",no,New York,yes,on backorder,cellular
+56,Medium,>125%,"134,00 %",no,New York,yes,on backorder,telephone
+120,Medium,>125%,"250,00 %",no,Ohio,yes,on backorder,cellular
+241,Medium,>125%,"704,00 %",no,Oregon,no,not on backorder,cellular
+30,Medium,>125%,"78,00 %",no,Oregon,no,not on backorder,telephone
+3412,Medium,>125%,"35560,00 %",no,Oregon,no,not on backorder,unknown
+2,Medium,>125%,"122,00 %",no,Oregon,no,on backorder,cellular
+367,Medium,>125%,"2576,00 %",no,Oregon,no,on backorder,unknown
+440,Medium,>125%,"1284,00 %",no,Oregon,yes,not on backorder,cellular
+46,Medium,>125%,"158,00 %",no,Oregon,yes,not on backorder,telephone
+3430,Medium,>125%,"17538,00 %",no,Oregon,yes,not on backorder,unknown
+4,Medium,>125%,"250,00 %",no,Oregon,yes,on backorder,cellular
+531,Medium,>125%,"3124,00 %",no,Oregon,yes,on backorder,unknown
+10013,Medium,>125%,"34748,00 %",no,Texas,no,not on backorder,cellular
+458,Medium,>125%,"1600,00 %",no,Texas,no,not on backorder,telephone
+41,Medium,>125%,"360,00 %",no,Texas,no,on backorder,cellular
+6285,Medium,>125%,"22132,00 %",no,Texas,yes,not on backorder,cellular
+453,Medium,>125%,"1554,00 %",no,Texas,yes,not on backorder,telephone
+21,Medium,>125%,"72,00 %",no,Texas,yes,not on backorder,unknown
+63,Medium,>125%,"526,00 %",no,Texas,yes,on backorder,cellular
+2376,Medium,>125%,"8624,00 %",no,Washington,no,not on backorder,cellular
+49,Medium,>125%,"160,00 %",no,Washington,no,not on backorder,telephone
+12172,Medium,>125%,"44098,00 %",no,Washington,yes,not on backorder,cellular
+215,Medium,>125%,"644,00 %",no,Washington,yes,not on backorder,telephone
+57,Medium,>125%,"898,00 %",no,Washington,yes,on backorder,cellular
+591,Medium,>125%,"2866,00 %",yes,California,no,not on backorder,cellular
+77,Medium,>125%,"446,00 %",yes,California,no,not on backorder,telephone
+3077,Medium,>125%,"11554,00 %",yes,California,no,not on backorder,unknown
+52,Medium,>125%,"350,00 %",yes,California,yes,not on backorder,cellular
+14,Medium,>125%,"60,00 %",yes,California,yes,not on backorder,telephone
+253,Medium,>125%,"660,00 %",yes,California,yes,not on backorder,unknown
+391,Medium,>125%,"1086,00 %",yes,Florida,no,not on backorder,cellular
+27,Medium,>125%,"82,00 %",yes,Florida,no,not on backorder,telephone
+140,Medium,>125%,"608,00 %",yes,Florida,no,on backorder,cellular
+173,Medium,>125%,"382,00 %",yes,Florida,yes,not on backorder,cellular
+4,Medium,>125%,"76,00 %",yes,Georgia,no,not on backorder,cellular
+480,Medium,>125%,"1226,00 %",yes,Illinois,no,not on backorder,cellular
+281,Medium,>125%,"716,00 %",yes,Illinois,yes,not on backorder,cellular
+57,Medium,>125%,"112,00 %",yes,Illinois,yes,not on backorder,telephone
+52,Medium,>125%,"174,00 %",yes,Massachusetts,no,not on backorder,cellular
+135,Medium,>125%,"2444,00 %",yes,New Jersey,no,not on backorder,cellular
+3,Medium,>125%,"84,00 %",yes,New Jersey,no,not on backorder,telephone
+87,Medium,>125%,"1636,00 %",yes,New Jersey,yes,not on backorder,cellular
+8,Medium,>125%,"146,00 %",yes,New Jersey,yes,not on backorder,telephone
+2691,Medium,>125%,"11420,00 %",yes,New York,no,not on backorder,cellular
+188,Medium,>125%,"892,00 %",yes,New York,no,not on backorder,telephone
+9,Medium,>125%,"76,00 %",yes,New York,no,not on backorder,unknown
+83,Medium,>125%,"196,00 %",yes,New York,no,on backorder,cellular
+3553,Medium,>125%,"18904,00 %",yes,New York,yes,not on backorder,cellular
+239,Medium,>125%,"1422,00 %",yes,New York,yes,not on backorder,telephone
+233,Medium,>125%,"666,00 %",yes,New York,yes,on backorder,cellular
+49,Medium,>125%,"150,00 %",yes,Oregon,no,not on backorder,cellular
+701,Medium,>125%,"7496,00 %",yes,Oregon,no,not on backorder,unknown
+33,Medium,>125%,"248,00 %",yes,Oregon,no,on backorder,unknown
+477,Medium,>125%,"2370,00 %",yes,Oregon,yes,not on backorder,unknown
+66,Medium,>125%,"404,00 %",yes,Oregon,yes,on backorder,unknown
+2322,Medium,>125%,"8174,00 %",yes,Texas,no,not on backorder,cellular
+61,Medium,>125%,"238,00 %",yes,Texas,no,not on backorder,telephone
+1520,Medium,>125%,"5462,00 %",yes,Texas,yes,not on backorder,cellular
+81,Medium,>125%,"262,00 %",yes,Texas,yes,not on backorder,telephone
+17,Medium,>125%,"50,00 %",yes,Texas,yes,on backorder,cellular
+615,Medium,>125%,"2206,00 %",yes,Washington,no,not on backorder,cellular
+4,Medium,>125%,"72,00 %",yes,Washington,no,not on backorder,unknown
+1069,Medium,>125%,"3978,00 %",yes,Washington,yes,not on backorder,cellular
+1103,Medium,Between 100%-125%,"8552,00 %",no,California,no,not on backorder,cellular
+199,Medium,Between 100%-125%,"1442,00 %",no,California,no,not on backorder,telephone
+5614,Medium,Between 100%-125%,"36520,00 %",no,California,no,not on backorder,unknown
+8,Medium,Between 100%-125%,"98,00 %",no,California,no,on backorder,unknown
+407,Medium,Between 100%-125%,"3170,00 %",no,California,yes,not on backorder,cellular
+26,Medium,Between 100%-125%,"448,00 %",no,California,yes,not on backorder,telephone
+884,Medium,Between 100%-125%,"5822,00 %",no,California,yes,not on backorder,unknown
+55,Medium,Between 100%-125%,"216,00 %",no,California,yes,on backorder,cellular
+22,Medium,Between 100%-125%,"106,00 %",no,California,yes,on backorder,telephone
+352,Medium,Between 100%-125%,"1304,00 %",no,Florida,no,not on backorder,cellular
+40,Medium,Between 100%-125%,"226,00 %",no,Florida,no,not on backorder,telephone
+152,Medium,Between 100%-125%,"904,00 %",no,Florida,no,on backorder,cellular
+17,Medium,Between 100%-125%,"106,00 %",no,Florida,no,on backorder,telephone
+1429,Medium,Between 100%-125%,"6004,00 %",no,Florida,yes,not on backorder,cellular
+241,Medium,Between 100%-125%,"980,00 %",no,Florida,yes,not on backorder,telephone
+126,Medium,Between 100%-125%,"852,00 %",no,Florida,yes,on backorder,cellular
+16,Medium,Between 100%-125%,"210,00 %",no,Georgia,yes,not on backorder,telephone
+787,Medium,Between 100%-125%,"2952,00 %",no,Illinois,no,not on backorder,cellular
+84,Medium,Between 100%-125%,"314,00 %",no,Illinois,no,not on backorder,telephone
+2102,Medium,Between 100%-125%,"7946,00 %",no,Illinois,yes,not on backorder,cellular
+533,Medium,Between 100%-125%,"1982,00 %",no,Illinois,yes,not on backorder,telephone
+210,Medium,Between 100%-125%,"1092,00 %",no,Massachusetts,yes,not on backorder,cellular
+41,Medium,Between 100%-125%,"210,00 %",no,Massachusetts,yes,not on backorder,telephone
+165,Medium,Between 100%-125%,"4680,00 %",no,New Jersey,no,not on backorder,cellular
+20,Medium,Between 100%-125%,"644,00 %",no,New Jersey,no,not on backorder,telephone
+193,Medium,Between 100%-125%,"5414,00 %",no,New Jersey,yes,not on backorder,cellular
+68,Medium,Between 100%-125%,"2044,00 %",no,New Jersey,yes,not on backorder,telephone
+2704,Medium,Between 100%-125%,"16490,00 %",no,New York,no,not on backorder,cellular
+462,Medium,Between 100%-125%,"2874,00 %",no,New York,no,not on backorder,telephone
+167,Medium,Between 100%-125%,"612,00 %",no,New York,no,on backorder,cellular
+117,Medium,Between 100%-125%,"418,00 %",no,New York,no,on backorder,telephone
+2941,Medium,Between 100%-125%,"18462,00 %",no,New York,yes,not on backorder,cellular
+854,Medium,Between 100%-125%,"5186,00 %",no,New York,yes,not on backorder,telephone
+30,Medium,Between 100%-125%,"572,00 %",no,New York,yes,not on backorder,unknown
+568,Medium,Between 100%-125%,"2006,00 %",no,New York,yes,on backorder,cellular
+151,Medium,Between 100%-125%,"518,00 %",no,New York,yes,on backorder,telephone
+90,Medium,Between 100%-125%,"332,00 %",no,Ohio,yes,on backorder,cellular
+37,Medium,Between 100%-125%,"210,00 %",no,Oregon,no,not on backorder,cellular
+1462,Medium,Between 100%-125%,"16312,00 %",no,Oregon,no,not on backorder,unknown
+180,Medium,Between 100%-125%,"1528,00 %",no,Oregon,no,on backorder,unknown
+140,Medium,Between 100%-125%,"898,00 %",no,Oregon,yes,not on backorder,cellular
+80,Medium,Between 100%-125%,"318,00 %",no,Oregon,yes,not on backorder,telephone
+3517,Medium,Between 100%-125%,"21618,00 %",no,Oregon,yes,not on backorder,unknown
+1,Medium,Between 100%-125%,"110,00 %",no,Oregon,yes,on backorder,cellular
+417,Medium,Between 100%-125%,"3616,00 %",no,Oregon,yes,on backorder,unknown
+2995,Medium,Between 100%-125%,"15012,00 %",no,Texas,no,not on backorder,cellular
+514,Medium,Between 100%-125%,"2588,00 %",no,Texas,no,not on backorder,telephone
+20,Medium,Between 100%-125%,"94,00 %",no,Texas,no,not on backorder,unknown
+3,Medium,Between 100%-125%,"104,00 %",no,Texas,no,on backorder,cellular
+2835,Medium,Between 100%-125%,"14482,00 %",no,Texas,yes,not on backorder,cellular
+820,Medium,Between 100%-125%,"4300,00 %",no,Texas,yes,not on backorder,telephone
+38,Medium,Between 100%-125%,"436,00 %",no,Texas,yes,on backorder,cellular
+866,Medium,Between 100%-125%,"5472,00 %",no,Washington,no,not on backorder,cellular
+26,Medium,Between 100%-125%,"100,00 %",no,Washington,no,not on backorder,telephone
+14,Medium,Between 100%-125%,"324,00 %",no,Washington,no,on backorder,cellular
+8080,Medium,Between 100%-125%,"50872,00 %",no,Washington,yes,not on backorder,cellular
+378,Medium,Between 100%-125%,"1692,00 %",no,Washington,yes,not on backorder,telephone
+8,Medium,Between 100%-125%,"218,00 %",no,Washington,yes,not on backorder,unknown
+96,Medium,Between 100%-125%,"2124,00 %",no,Washington,yes,on backorder,cellular
+5,Medium,Between 100%-125%,"116,00 %",no,Washington,yes,on backorder,telephone
+197,Medium,Between 100%-125%,"1532,00 %",yes,California,no,not on backorder,cellular
+915,Medium,Between 100%-125%,"5392,00 %",yes,California,no,not on backorder,unknown
+8,Medium,Between 100%-125%,"98,00 %",yes,California,no,on backorder,unknown
+28,Medium,Between 100%-125%,"204,00 %",yes,California,yes,not on backorder,cellular
+92,Medium,Between 100%-125%,"630,00 %",yes,California,yes,not on backorder,unknown
+25,Medium,Between 100%-125%,"120,00 %",yes,California,yes,on backorder,cellular
+224,Medium,Between 100%-125%,"866,00 %",yes,Florida,no,not on backorder,cellular
+30,Medium,Between 100%-125%,"110,00 %",yes,Florida,no,not on backorder,telephone
+37,Medium,Between 100%-125%,"204,00 %",yes,Florida,no,on backorder,cellular
+42,Medium,Between 100%-125%,"210,00 %",yes,Florida,yes,not on backorder,cellular
+16,Medium,Between 100%-125%,"108,00 %",yes,Florida,yes,on backorder,cellular
+253,Medium,Between 100%-125%,"908,00 %",yes,Illinois,no,not on backorder,cellular
+28,Medium,Between 100%-125%,"94,00 %",yes,Illinois,no,not on backorder,telephone
+448,Medium,Between 100%-125%,"1736,00 %",yes,Illinois,yes,not on backorder,cellular
+56,Medium,Between 100%-125%,"224,00 %",yes,Illinois,yes,not on backorder,telephone
+62,Medium,Between 100%-125%,"1708,00 %",yes,New Jersey,no,not on backorder,cellular
+15,Medium,Between 100%-125%,"396,00 %",yes,New Jersey,no,not on backorder,telephone
+59,Medium,Between 100%-125%,"1564,00 %",yes,New Jersey,yes,not on backorder,cellular
+10,Medium,Between 100%-125%,"342,00 %",yes,New Jersey,yes,not on backorder,telephone
+843,Medium,Between 100%-125%,"4626,00 %",yes,New York,no,not on backorder,cellular
+72,Medium,Between 100%-125%,"426,00 %",yes,New York,no,not on backorder,telephone
+87,Medium,Between 100%-125%,"314,00 %",yes,New York,no,on backorder,cellular
+31,Medium,Between 100%-125%,"96,00 %",yes,New York,no,on backorder,telephone
+2169,Medium,Between 100%-125%,"16524,00 %",yes,New York,yes,not on backorder,cellular
+417,Medium,Between 100%-125%,"3222,00 %",yes,New York,yes,not on backorder,telephone
+9,Medium,Between 100%-125%,"94,00 %",yes,New York,yes,not on backorder,unknown
+196,Medium,Between 100%-125%,"736,00 %",yes,New York,yes,on backorder,cellular
+15,Medium,Between 100%-125%,"102,00 %",yes,Oregon,no,not on backorder,cellular
+348,Medium,Between 100%-125%,"3356,00 %",yes,Oregon,no,not on backorder,unknown
+16,Medium,Between 100%-125%,"104,00 %",yes,Oregon,no,on backorder,unknown
+29,Medium,Between 100%-125%,"94,00 %",yes,Oregon,yes,not on backorder,cellular
+543,Medium,Between 100%-125%,"3366,00 %",yes,Oregon,yes,not on backorder,unknown
+63,Medium,Between 100%-125%,"528,00 %",yes,Oregon,yes,on backorder,unknown
+779,Medium,Between 100%-125%,"3910,00 %",yes,Texas,no,not on backorder,cellular
+62,Medium,Between 100%-125%,"322,00 %",yes,Texas,no,not on backorder,telephone
+3,Medium,Between 100%-125%,"96,00 %",yes,Texas,no,on backorder,cellular
+781,Medium,Between 100%-125%,"3924,00 %",yes,Texas,yes,not on backorder,cellular
+164,Medium,Between 100%-125%,"800,00 %",yes,Texas,yes,not on backorder,telephone
+2,Medium,Between 100%-125%,"108,00 %",yes,Texas,yes,on backorder,cellular
+282,Medium,Between 100%-125%,"1990,00 %",yes,Washington,no,not on backorder,cellular
+27,Medium,Between 100%-125%,"102,00 %",yes,Washington,no,not on backorder,telephone
+9,Medium,Between 100%-125%,"222,00 %",yes,Washington,no,on backorder,cellular
+938,Medium,Between 100%-125%,"6240,00 %",yes,Washington,yes,not on backorder,cellular
+52,Medium,Between 100%-125%,"210,00 %",yes,Washington,yes,not on backorder,telephone
+5,Medium,Between 100%-125%,"110,00 %",yes,Washington,yes,on backorder,cellular

@@ -1,0 +1,25 @@
+﻿Factor,Location,Product ID,Risk
+Category: High Value Stable,USA,10000002,-12
+Category: High Value Volatile,USA,10000004,8
+Category: Highly Intermittent,USA,10000003,10
+Category: Low Value Stable,USA,10000000,-8
+Category: Low Value Stable,USA,10000001,-8
+Category: Low Value Stable,USA,10000006,-4
+Forecast Accuracy: < 50%,USA,10000000,38
+Forecast Accuracy: < 50%,USA,10000001,28
+Forecast Accuracy: < 50%,USA,10000006,35
+Forecast Accuracy: 50-80%,USA,10000002,4
+Forecast Accuracy: 80%-100%,USA,10000003,-19
+Forecast Accuracy: 80%-100%,USA,10000004,-6
+Inventory Level: High,USA,10000003,-15
+Inventory Level: High,USA,10000004,-20
+Inventory Level: Low,USA,10000000,35
+Inventory Level: Low,USA,10000001,25
+Inventory Level: Low,USA,10000006,41
+Inventory Level: Medium,USA,10000002,30
+Manufactured Goods: < 70%,USA,10000000,24
+Manufactured Goods: < 70%,USA,10000001,14
+Manufactured Goods: < 70%,USA,10000006,23
+Manufactured Goods: 100%-110%,USA,10000004,4
+Manufactured Goods: 80%-90%,USA,10000002,10
+Manufactured Goods: 90%-100%,USA,10000003,-6
