@@ -1,0 +1,32 @@
+﻿DiscountPercent;EndDate;PromotionLabel;PromotionName;StartDate;Priority;PromotionKey
+0;31/12/2014 0:00;1;No Discount;01/01/2007 0:00;1;1
+0.05;31/03/2011 0:00;2;North America Spring Promotion;01/01/2011 0:00;;2
+0.1;30/09/2011 0:00;3;North America Back-to-School Promotion;01/07/2011 0:00;3;11
+0.2;31/12/2011 0:00;4;North America Holiday Promotion;01/11/2011 0:00;;20
+0.15;31/01/2012 0:00;5;Asian Holiday Promotion;01/11/2011 0:00;4;8
+0.2;30/04/2011 0:00;6;Asian Spring Promotion;01/02/2011 0:00;;17
+0.1;30/06/2011 0:00;7;Asian Summer Promotion;01/05/2011 0:00;;26
+0.07;30/04/2011 0:00;8;European Spring Promotion;01/02/2011 0:00;1;7
+0.1;30/09/2011 0:00;9;European Back-to-Scholl Promotion;01/08/2011 0:00;;3
+0.2;31/01/2012 0:00;10;European Holiday Promotion;01/10/2011 0:00;;9
+0.05;31/03/2012 0:00;11;North America Spring Promotion;01/01/2012 0:00;5;16
+0.1;30/09/2012 0:00;12;North America Back-to-School Promotion;01/07/2012 0:00;5;12
+0.2;31/12/2012 0:00;13;North America Holiday Promotion;01/11/2012 0:00;4;18
+0.15;31/01/2013 0:00;14;Asian Holiday Promotion;01/11/2012 0:00;;25
+0.2;30/04/2012 0:00;15;Asian Spring Promotion;01/02/2012 0:00;;21
+0.1;30/06/2012 0:00;16;Asian Summer Promotion;01/05/2012 0:00;;27
+0.07;30/04/2012 0:00;17;European Spring Promotion;01/02/2012 0:00;;5
+0.1;30/09/2012 0:00;18;European Back-to-Scholl Promotion;01/08/2012 0:00;;14
+0.2;31/01/2013 0:00;19;European Holiday Promotion;01/10/2012 0:00;;23
+0.05;31/03/2014 0:00;20;North America Spring Promotion;01/01/2013 0:00;1;6
+0.98;30/09/2013 0:00;21;North America Back-to-School Promotion;01/07/2013 0:00;2;4
+0.99;31/12/2013 0:00;22;North America Holiday Promotion;01/11/2013 0:00;3;10
+0.85;31/01/2014 0:00;23;Asian Holiday Promotion;01/11/2013 0:00;;15
+0.2;30/04/2013 0:00;24;Asian Spring Promotion;01/02/2013 0:00;4;13
+0.1;30/06/2013 0:00;25;Asian Summer Promotion;01/05/2013 0:00;5;19
+0.07;30/04/2013 0:00;26;European Spring Promotion;01/02/2013 0:00;;24
+0.1;30/09/2013 0:00;27;European Back-to-Scholl Promotion;01/08/2013 0:00;;22
+0.2;31/01/2014 0:00;28;European Holiday Promotion;01/10/2013 0:00;;28
+0.1;30/09/2013 0:00;27;European Back-to-Scholl Promotion;01/08/2013 0:00;;22
+0.2;30/04/2012 0:00;15;Asian Spring Promotion;01/02/2012 0:00;;21
+0.2;30/04/2011 0:00;6;Asian Spring Promotion;01/02/2011 0:00;;17
