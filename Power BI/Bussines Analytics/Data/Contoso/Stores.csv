@@ -1,0 +1,307 @@
+﻿CloseReason,EmployeeCount,GeographyKey,SellingAreaSize,Status,StoreKey,StoreName,StoreType
+"",19,424,455,On,4,Contoso Bellevue Store,Store
+"",26,449,680,On,156,Contoso Cambridge Store,Store
+"",19,453,455,On,88,Contoso Cedar Park Store,Store
+"",25,501,680,On,214,Contoso Leeds Store,Store
+"",17,506,462,On,201,Contoso London Store,Store
+"",12,529,680,On,215,Contoso Paris Store,Store
+"",12,529,551,On,309,Contoso Europe Reseller,Reseller
+"",25,551,700,On,17,Contoso Spokane Store,Store
+"",20,558,480,On,253,Contoso Sydney No.1 Store,Store
+"",95,558,480,On,300,Contoso Sydney  No.2 Store,Store
+"",95,562,480,On,289,Contoso Vancouver  No.1 Store,Store
+"",95,562,480,On,290,Contoso Vancouver  No.2 Store,Store
+"",22,571,500,On,22,Contoso Westminster Store,Store
+"",47,575,1125,On,6,Contoso Yakima Store,Store
+"",78,576,680,On,204,Contoso York Store,Store
+"",26,579,680,On,79,Contoso Baytown Store,Store
+"",13,586,500,On,228,Contoso Berlin Store,Store
+"",7,586,1000,On,306,Contoso Europe Online Store,Online
+"",95,598,480,On,291,Contoso Calgary  Store,Store
+"",17,627,462,On,16,Contoso Everett Store,Store
+"",64,651,680,On,212,Contoso Liverpool Store,Store
+"",33,677,560,On,5,Contoso Redmond Store,Store
+"",22,678,500,On,15,Contoso Renton Store,Store
+"",17,693,462,On,1,Contoso Seattle No.1 Store,Store
+"",25,693,700,On,2,Contoso Seattle No.2 Store,Store
+"",15,693,450,On,308,Contoso North America Reseller,Reseller
+"",68,708,480,On,264,Contoso Ashgabat No.1 Store,Store
+"",95,708,480,On,298,Contoso Ashgabat  No.2 Store,Store
+"",62,709,480,On,262,Contoso Bangkok No.1 Store,Store
+"",95,709,480,On,296,Contoso Bangkok No.2 Store,Store
+"",86,710,480,On,279,Contoso Beijing Store,Store
+"",8,710,93800,On,307,Contoso Asia Online Store,Online
+"",17,710,93800,On,310,Contoso Asia Reseller,Reseller
+"",50,711,480,On,276,Contoso Bishkek Store,Store
+"",50,712,480,On,275,Contoso Busan Store,Store
+"",28,713,480,On,252,Contoso Canberra Store,Store
+"",35,714,480,On,261,Contoso Damascus No.1 Store,Store
+"",95,714,480,On,295,Contoso Damascus No.2 Store,Store
+"",131,715,480,On,280,Contoso Guangzhou Store,Store
+"",35,716,480,On,259,Contoso Hong Kong No.1 Store,Store
+"",95,716,480,On,293,Contoso Hong Kong No.2 Store,Store
+"",71,717,480,On,265,Contoso Islamabad No.1 Store,Store
+"",95,717,480,On,299,Contoso Islamabad  No.2 Store,Store
+"",35,718,480,On,257,Contoso Kolkata Store,Store
+"",50,719,480,On,273,Contoso Kyoto Store,Store
+"",35,721,480,On,256,Contoso Mumbai Store,Store
+"",50,722,480,On,271,Contoso Nagoya Store,Store
+"",29,723,480,On,255,Contoso New Delhi Store,Store
+"",80,724,480,On,270,Contoso Osaka No.1 Store,Store
+"",95,724,480,On,301,Contoso Osaka No.2 Store,Store
+"",50,725,480,On,272,Contoso Sapporo Store,Store
+"",50,726,480,On,274,Contoso Seoul Store,Store
+"",95,727,480,On,277,Contoso Shanghai No.1 Store,Store
+"",95,727,480,On,281,Contoso Shanghai No.2 Store,Store
+"",27,728,480,On,251,Contoso Singapore Store,Store
+"",95,729,480,On,302,Contoso Taipei  Store,Store
+"",35,730,480,On,260,Contoso Tehran No.1 Store,Store
+"",95,730,480,On,294,Contoso Tehran No.2 Store,Store
+"",35,731,480,On,258,Contoso Thimphu No.1 Store,Store
+"",95,731,480,On,292,Contoso Thimphu No.2 Store,Store
+"",68,732,480,On,267,Contoso Tokyo No.1 Store,Store
+"",68,732,480,On,268,Contoso Tokyo No.2 Store,Store
+"",50,733,480,On,278,Contoso Urumqi Store,Store
+"",15,734,480,On,254,Contoso Yerevan Store,Store
+"",77,735,480,On,269,Contoso Yokohama Store,Store
+"",26,736,680,On,240,Contoso Amsterdam Store,Store
+"",15,737,680,On,250,Contoso Athens Store,Store
+"",32,738,680,On,209,Contoso Baildon Store,Store
+"",28,739,500,On,236,Contoso Baumholder Store,Store
+"",53,740,680,On,246,Contoso Berne Store,Store
+"",25,741,680,On,245,Contoso Bucharest Store,Store
+"",23,742,680,On,205,Contoso Carlisle Store,Store
+"",,743,680,On,210,Contoso Cheshire Store,Store
+"",25,745,680,On,241,Contoso Copenhagen Store,Store
+"",55,746,680,On,249,Contoso Dublin Store,Store
+"",24,747,500,On,234,Contoso Dusseldorf Store,Store
+"",25,748,700,On,202,Contoso Edinburgh Store,Store
+"",45,749,500,On,224,Contoso Firenze Store,Store
+"",15,750,500,On,237,Contoso Giebelstadt Store,Store
+"",26,751,680,On,203,Contoso Glasgow Store,Store
+"",25,752,500,On,231,Contoso Hofheim Store,Store
+"",24,753,680,On,213,Contoso Knotty Ash Store,Store
+"",25,754,500,On,230,Contoso koln No.2 Store,Store
+"",35,754,500,On,232,Contoso koln No.1 Store,Store
+"",36,755,680,On,207,Contoso Lancashire Store,Store
+"",21,756,500,On,233,Contoso Landstuhl Store,Store
+"",95,757,480,On,303,Contoso Lisbon Store,Store
+"",36,758,680,On,244,Contoso Ljubljana Store,Store
+"",15,759,680,On,217,Contoso Lyon Store,Store
+"",35,760,680,On,243,Contoso Madrid Store,Store
+"",11,761,680,On,206,Contoso Manchester Store,Store
+"",13,762,680,On,216,Contoso Marseille Store,Store
+"",23,763,500,On,226,Contoso Milan Store,Store
+"",65,764,480,On,263,Contoso Moscow  No.1 Store,Store
+"",95,764,480,On,297,Contoso Moscow  No.2 Store,Store
+"",18,765,500,On,239,Contoso Munich Store,Store
+"",11,766,680,On,220,Contoso Nantes Store,Store
+"",32,767,680,On,219,Contoso Nice Store,Store
+"",95,768,480,On,305,Contoso Nizhny Novgorod Store,Store
+"",29,769,500,On,238,Contoso obamberg Store,Store
+"",15,770,500,On,235,Contoso Ramstein Store,Store
+"",43,771,490,On,222,Contoso Roma Store,Store
+"",95,772,480,On,304,Contoso Saint Petersburg Store,Store
+"",33,773,680,On,242,Contoso Stockholm Store,Store
+"",34,774,680,On,211,Contoso Stockport Store,Store
+"",10,775,630,On,221,Contoso Strasbourg Store,Store
+"",24,776,500,On,225,Contoso Torino Store,Store
+"",23,777,680,On,218,Contoso Toulouse Store,Store
+"",42,778,680,On,248,Contoso Valletta Store,Store
+"",11,779,500,On,223,Contoso Venezia Store,Store
+"",15,780,680,On,247,Contoso Warsaw Store,Store
+"",90,781,680,On,208,Contoso West Yorkshire Store,Store
+"",47,782,1125,On,114,Contoso Albany Store,Store
+"",47,784,1125,On,183,Contoso Anchorage Store,Store
+"",22,785,500,On,191,Contoso Annapolis Store,Store
+"",33,786,560,On,43,Contoso Appleton Store,Store
+"",25,787,700,On,93,Contoso Arlington Store,Store
+"",26,788,680,On,141,Contoso Atlantic City Store,Store
+"",19,789,455,On,150,Contoso Attleboro Store,Store
+"",25,790,700,On,40,Contoso Aurora Store,Store
+"",25,791,700,On,86,Contoso Austin Store,Store
+"",33,792,560,On,197,Contoso Back River Store,Store
+"",19,793,455,On,81,Contoso Bacliff Store,Store
+"",17,794,460,On,192,Contoso Baltimore Store,Store
+"",33,795,560,On,166,Contoso Bangor Store,Store
+"",47,796,1125,On,167,Contoso Bar Harbor Store,Store
+"",47,797,1125,On,137,Contoso Bayonne Store,Store
+"",22,798,500,On,76,Contoso Beaumont No.1 Store,Store
+"",25,798,700,On,78,Contoso Beaumont No.2 Store,Store
+"",26,799,680,On,33,Contoso Berthoud Store,Store
+"",325,800,500,On,199,Contoso North America Online Store,Online
+"",19,801,455,On,173,Contoso Bridgeport Store,Store
+"",17,802,460,On,146,Contoso Boston Store,Store
+"",47,803,1125,On,37,Contoso Boulder Store,Store
+"",47,804,1125,On,121,Contoso Brooklyn Store,Store
+"",47,806,1125,On,52,Contoso Burlington Store,Store
+"",33,807,560,On,113,Contoso Cape Canaveral Store,Store
+"",22,808,500,On,145,Contoso Cape May Store,Store
+"",33,809,560,On,28,Contoso Castle Rock Store,Store
+"",47,810,1125,On,190,Contoso Charleston Store,Store
+"",25,811,700,On,186,Contoso Charlottesville Store,Store
+"",26,813,680,On,11,Contoso Cle Elum Store,Store
+"",26,814,680,On,134,Contoso Clifton Store,Store
+"",47,815,1125,On,90,Contoso Dallas Store,Store
+"",22,816,500,On,176,Contoso Darien Store,Store
+"",47,817,1125,On,98,Contoso Denton Store,Store
+"",26,818,680,On,34,Contoso Denver No.1 Store,Store
+"",19,818,455,On,35,Contoso Denver No.2 Store,Store
+"",33,818,560,On,36,Contoso Denver No.3 Store,Store
+"",26,819,680,On,95,Contoso Desoto Store,Store
+"",19,820,455,On,135,Contoso East Orange Store,Store
+"",22,821,500,On,53,Contoso East Troy Store,Store
+"",25,822,700,On,63,Contoso Edgerton Store,Store
+"",26,823,680,On,126,Contoso Elmira Store,Store
+"",33,824,560,On,20,Contoso Englewood Store,Store
+"",47,825,1125,On,14,Contoso Fall City Store,Store
+"",25,826,700,On,163,Contoso Falmouth Store,Store
+"",17,827,460,On,46,Contoso Fond du Lac Store,Store
+"",26,828,680,On,64,Contoso Fort Atkinson Store,Store
+"",22,829,500,On,30,Contoso Fort Collins Store,Store
+"",25,830,700,On,109,Contoso Fort Lauderdale Store,Store
+"",22,831,500,On,99,Contoso Fort Worth Store,Store
+"",25,832,700,On,155,Contoso Framingham Store,Store
+"",26,833,680,On,187,Contoso Fredericksburg Store,Store
+"",22,834,500,On,91,Contoso Georgetown Store,Store
+"",25,835,700,On,55,Contoso Germantown Store,Store
+"",47,835,1125,On,198,Contoso North Harford Store,Store
+"",17,836,460,On,23,Contoso Grand Junction Store,Store
+"",25,837,700,On,94,Contoso Grand Prairie Store,Store
+"",22,838,500,On,7,Contoso Granger Store,Store
+"",25,839,700,On,25,Contoso Greeley  No.1 Store,Store
+"",17,839,462,On,31,Contoso Greeley No.2 Store,Store
+"",19,840,455,On,42,Contoso Green Bay Store,Store
+"",33,841,560,On,189,Contoso Greenville Store,Store
+"",25,842,700,On,140,Contoso Hackensack Store,Store
+"",26,843,680,On,172,Contoso Hartford Store,Store
+"",19,844,455,On,158,Contoso Haverhill Store,Store
+"",17,845,460,On,92,Contoso Hillsboro Store,Store
+"",22,846,500,On,153,Contoso Hingham Store,Store
+"",33,847,560,On,143,Contoso Hoboken Store,Store
+"",22,848,500,On,161,Contoso Holyoke Store,Store
+"",33,849,560,On,66,Contoso Houston No.1 Store,Store
+"",47,849,1125,On,67,Contoso Houston No.2 Store,Store
+"",22,849,500,On,68,Contoso Houston No.3 Store,Store
+"",17,849,460,On,69,Contoso Houston No.4 Store,Store
+"",25,850,700,On,193,Contoso Howard Store,Store
+"",17,852,460,On,123,Contoso Ithaca Store,Store
+"",26,853,680,On,103,Contoso Jacksonville Store,Store
+"",25,854,700,On,132,Contoso Jersey City Store,Store
+"",22,855,500,On,168,Contoso Kennebunkport Store,Store
+"",26,856,680,On,3,Contoso Kennewick Store,Store
+"",26,858,680,On,80,Contoso La Porte Store,Store
+"",19,859,455,On,27,Contoso Lafayette Store,Store
+"",17,860,460,On,108,Contoso Lakeland Store,Store
+"",47,861,1125,On,152,Contoso Leominster Store,Store
+"",17,862,460,On,169,Contoso Lewiston Store,Store
+"",33,863,560,On,97,Contoso Lewisville Store,Store
+"",25,864,700,On,178,Contoso Litchfield County Store,Store
+"",17,865,462,On,39,Contoso Littleton Store,Store
+"",47,866,1125,On,75,Contoso Longview Store,Store
+"",26,867,680,On,26,Contoso Loveland Store,Store
+"",33,868,560,On,151,Contoso Lowell Store,Store
+"",33,869,560,On,159,Contoso Lynn Store,Store
+"",47,870,1125,On,60,Contoso Madison Store,Store
+"",33,871,560,On,59,Contoso Manitowoc Store,Store
+"",33,872,560,On,74,Contoso Marshall Store,Store
+"",19,873,455,On,188,Contoso Martinsville Store,Store
+"",47,874,1125,On,44,Contoso Menasha Store,Store
+"",17,875,462,On,101,Contoso Miami No.1 Store,Store
+"",25,875,700,On,102,Contoso Miami No.2 Store,Store
+"",25,876,700,On,70,Contoso Midland Store,Store
+"",25,877,700,On,32,Contoso Milliken Store,Store
+"",25,878,700,On,47,Contoso Milwaukee No.1 Store,Store
+"",26,878,680,On,49,Contoso Milwaukee No.3 Store,Store
+"",26,879,680,On,72,Contoso Minden Store,Store
+"",19,880,455,On,142,Contoso Montclair Store,Store
+"",95,881,480,On,287,Contoso Montreal No.1 Store,Store
+"",95,881,480,On,288,Contoso Montreal No.2 Store,Store
+"",47,882,1125,On,144,Contoso Morristown Store,Store
+"",19,883,455,On,165,Contoso Nantucket Store,Store
+"",13,884,500,On,227,Contoso Naples Store,Store
+"",26,885,680,On,149,Contoso New Bedford Store,Store
+"",17,886,462,On,139,Contoso New Brunswick Store,Store
+"",25,887,700,On,24,Contoso New Castle Store,Store
+"",17,888,462,On,177,Contoso New Haven Store,Store
+"",26,889,680,On,179,Contoso New London Store,Store
+"",22,890,500,On,115,Contoso New York No.1 Store,Store
+"",25,890,700,On,117,Contoso New York No.2 Store,Store
+"",22,891,500,On,130,Contoso Newark No.1 Store,Store
+"",17,891,462,On,131,Contoso Newark No.2 Store,Store
+"",26,892,680,On,180,Contoso Norfolk Store,Store
+"",120,894,462,On,200,Contoso Catalog Store,Catalog
+"",47,895,1125,On,160,Contoso Northampton Store,Store
+"",47,896,1125,On,175,Contoso Old Saybrook Store,Store
+"",17,897,462,On,77,Contoso Orange Store,Store
+"",22,898,500,On,61,Contoso Oregon Store,Store
+"",25,899,700,On,110,Contoso Orlando Store,Store
+"",25,900,700,On,170,Contoso Orono Store,Store
+"",22,901,500,On,45,Contoso Oshkosh Store,Store
+"",22,902,500,On,122,Contoso Oswego Store,Store
+"",95,903,480,On,282,Contoso Ottawa No.1 Store,Store
+"",95,903,480,On,283,Contoso Ottawa No.2 Store,Store
+"",26,904,680,On,41,Contoso Parker Store,Store
+"",19,905,455,On,196,Contoso Parkville Store,Store
+"",47,906,1125,On,83,Contoso Pasadena Store,Store
+"",33,907,560,On,136,Contoso Passaic Store,Store
+"",26,908,680,On,133,Contoso Paterson Store,Store
+"",17,910,462,On,100,Contoso Plano Store,Store
+"",33,911,560,On,120,Contoso Plattsburgh Store,Store
+"",19,912,455,On,127,Contoso Poestenkill Store,Store
+"",26,913,680,On,57,Contoso Port Washington Store,Store
+"",26,914,680,On,164,Contoso Provincetown Store,Store
+"",26,915,680,On,195,Contoso Queen Anne's County Store,Store
+"",25,916,700,On,125,Contoso Queens Store,Store
+"",17,917,462,On,154,Contoso Quincy Store,Store
+"",33,918,560,On,51,Contoso Racine No.1 Store,Store
+"",19,918,455,On,65,Contoso Racine No.2 Store,Store
+"",19,919,455,On,96,Contoso Richardson Store,Store
+"",25,920,700,On,194,Contoso Ridgely Store,Store
+"",17,921,462,On,185,Contoso Roanoke Store,Store
+"",17,922,462,On,116,Contoso Rochester No.1 Store,Store
+"",25,922,700,On,124,Contoso Rochester No.2 Store,Store
+"",33,923,560,On,89,Contoso Round Rock Store,Store
+"",25,924,700,On,71,Contoso Russellville Store,Store
+"",26,925,680,On,87,Contoso San Antonio Store,Store
+"",22,926,500,On,107,Contoso Sebring Store,Store
+"",19,928,455,On,58,Contoso Sheboygan Store,Store
+"",19,929,455,On,73,Contoso Shreveport Store,Store
+"",33,930,560,On,13,Contoso Snoqualmie Store,Store
+"",26,931,680,On,157,Contoso Somerville Store,Store
+"",25,932,700,On,171,Contoso South Portland Store,Store
+"",17,933,462,On,85,Contoso Spring Store,Store
+"",17,935,460,On,8,Contoso Sunnyside Store,Store
+"",26,936,680,On,118,Contoso Syracuse Store,Store
+"",19,937,455,On,104,Contoso Tallahassee No.1 Store,Store
+"",33,937,560,On,105,Contoso Tallahassee No.2 Store,Store
+"",26,938,680,On,111,Contoso Tampa Store,Store
+"",33,939,560,On,82,Contoso Texas City Store,Store
+"",22,940,500,On,38,Contoso Thornton Store,Store
+"",25,941,700,On,9,Contoso Toppenish Store,Store
+"",95,942,480,On,284,Contoso Toronto No.1 Store,Store
+"",95,942,480,On,285,Contoso Toronto No.2 Store,Store
+"",95,942,480,On,286,Contoso Toronto No.3 Store,Store
+"",33,943,560,On,128,Contoso Trenton No.1 Store,Store
+"",26,944,680,On,18,Contoso Veradale Store,Store
+"",22,945,500,On,138,Contoso Vineland Store,Store
+"",19,946,455,On,181,Contoso Virginia Beach Store,Store
+"",25,947,700,On,10,Contoso Wapato Store,Store
+"",33,948,560,On,174,Contoso Waterbury Store,Store
+"",19,949,455,On,50,Contoso Waukesha No.1 Store,Store
+"",17,949,462,On,54,Contoso Waukesha No.2 Store,Store
+"",47,950,1125,On,21,Contoso Wheat Ridge Store,Store
+"",33,951,560,On,182,Contoso Winchester Store,Store
+"",25,952,700,On,147,Contoso Worcester No.1 Store,Store
+Relocation,22,783,500,Off,184,Contoso Alexandria Store,Store
+Relocation,22,851,500,Off,84,Contoso Humble Store,Store
+Relocation,19,857,455,Off,112,Contoso Key West Store,Store
+Relocation,25,878,700,Off,48,Contoso Milwaukee No.2 Store,Store
+Relocation,19,893,455,Off,12,Contoso North Bend Store,Store
+Relocation,17,909,462,Off,162,Contoso Pittsfield Store,Store
+Relocation,47,927,1125,Off,29,Contoso Sedalia Store,Store
+Relocation,17,934,462,Off,62,Contoso Stoughton Store,Store
+Relocation,47,943,1125,Off,129,Contoso Trenton No.2 Store,Store
+Relocation,25,952,700,Off,148,Contoso Worcester No.2 Store,Store
+Store,19,805,455,Off,119,Contoso Buffalo Store,Store
+Store,19,812,455,Off,19,Contoso Cheney Store,Store
