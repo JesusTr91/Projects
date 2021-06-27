@@ -6,4 +6,4 @@ The data generated each day is exponentially growing everyday it passes and it's
 
 ## Objetive
 
-In this project we will explore to the most deep and dubious streets of San Francisco in order to understand the relationship between reported crime incidents by civilians and police officers. 
+In this project we will explore to the most deep and dubious streets of San Francisco in order to understand the relationship between reported crime incidents by civilians and police officers.
