@@ -6,3 +6,13 @@ In addition, over the years and with the evolution of fraud detection methods, f
 
 Within fraud behavior, you want to find invariants or patterns that allow you to predict fraud at the transactional level.
 to predict fraud at the transactional level, i.e., to find strange buying behavior based on the purchase history of the customer. This refers to finding strange buying behaviors based on the customer's transactional history and incoming transaction data. 
+
+## Objective
+
+Our aim is to predict fraudulent credit card transactions in the dataset using synthetic balancing techniques and machine learning. The three classifier algorithms we will train include:
+
+* Decision Tree, which uses a tree-like model of decisions to arrive at a classification prediction.
+* Naive Bayes, which uses Bayes' theorem to use probability to arrive at a classification prediction.
+* Linear Discriminant Analysis, which finds a linear combination of features that is then used to separate the classes and arrive at a classification prediction.
+
+We are going to focus on the classification performance results, hence we want to evaluate the model performance of each algorithm and balancing technique to get to know which combination works best for our purpose. 
