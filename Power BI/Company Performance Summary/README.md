@@ -5,7 +5,8 @@ products and services. That is a laudable position, but especially in today's wo
 unacceptable not to have data analysis as a routine. It is not enough to just develop optimal
 products or services and even focus only on attracting new customers.
 
-Nowadays data analytics can help organizations to get insigths easily in order to make datadrven decisions. Data vizualization tolos have become a must since they help to get an easier understanding of the on-going situation of the company helping to improve the efficiency.
+Nowadays data analytics can help organizations to get insigths easily in order to make datadrven decisions. 
+Data vizualization tools have become a must since they help to get an easier understanding of the on-going situation of the company helping to improve the efficiency.
 
 ## Objetive
 
