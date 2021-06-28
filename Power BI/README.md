@@ -10,3 +10,8 @@ Here, I've gather the projects I've been working on to show my skills:
 |Project Name|Description |
 |:------|:-----|
 |`Credit Approval`|Approved credits distribution with certain factors within the population.|
+|`Company Performance Summary`|Dashboard that helps us to better understand the situation of a company in terms of sales, budget and sales performance.|
+|`Coronavirus Analytics`|Worldwide comprehensive insights about the epidemiology and response to Covid 19.|
+|`Customer Clustering Analytics`|Customer segmentation in common traits depending on their behaviors.|
+|`Gross Domestic Product Forecast`|GDP per capita worldwide forecasting for the 3 years ahead.|
+|`IT Company Overview`|Infographics that enlightens our understanding about the performance within an organization.|
