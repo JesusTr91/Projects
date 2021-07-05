@@ -13,4 +13,3 @@ Here, I've gather the projects I've been working on and published in tableau pub
 |`Mexico Store KPI Management`|Store dashboard, includes key performance indicators, sparklines charts and a distribution map.|[Link](https://public.tableau.com/views/MexicoKPIManagmentDashboard/Dashboard1?:language=es-ES&:display_count=n&:origin=viz_share_link)|
 |`New York City's Bike Rental`|Bike rentals dashboard, includes map of most popular star and end stations, average trip durations and start and stop times. |[Link](https://public.tableau.com/views/CityBikeTrips_16210630177940/Dashboard?:language=es-ES&:display_count=n&:origin=viz_share_link)|
 |`Worldwide Covid 19 Dashboard`|Covid 19 spread dashboard, includes total cases and deaths top 10 countries, infection and death rates charts and a world map|[Link](https://public.tableau.com/shared/DKDWFZJP4?:display_count=n&:origin=viz_share_link)|
-
