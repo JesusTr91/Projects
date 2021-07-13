@@ -1,0 +1,69 @@
+
+
+
+```{r warning=FALSE message=False}
+library('caTools')
+library('ggplot2')
+library('scales')
+
+setwd('C:/Users/Propietario/Desktop/R/Coursera')
+df <- read.csv('salaries.csv')
+summary(df)
+```
+
+```{r}
+#Splitting data set into training and testing sets
+set.seed(356)
+split <- sample.split(df$AnnualSalary, SplitRatio=3/4)
+train <- subset(df, split == TRUE)
+test <- subset(df, split == FALSE)
+
+#Fitting simple linear regression to training and testing sets 
+reg <- lm(formula = AnnualSalary ~ YearsOfExperience, data=train)
+summary(reg)
+```
+
+```{r}
+y_pred <- predict(reg, newdata=test)
+summary(y_pred)
+```
+
+```{r}
+#Visualizing Training set results
+ggplot() + geom_point(aes(x=train$YearsOfExperience, y=train$AnnualSalary), color='red') +
+      geom_line(aes(x=train$YearsOfExperience, y=predict(reg, newdata=train)), color='navy') +
+      ggtitle('Anual Salaries of Data Scientist vs Years of Experience (Training set)') +
+      xlab ('Years of Experience') +
+      ylab ('Annual Salary') +
+      scale_x_continuous(limits = c(0, 12)) +
+      scale_y_continuous(limits = c(0, 150000))
+```
+
+```{r}
+#trainig data points in red and in navy our prediction we just made, we can see we need to have 2.5 yoe to reach 50k
+
+ggplot() + geom_point(aes(x=test$YearsOfExperience, y=test$AnnualSalary), color='red') +
+      geom_line(aes(x=train$YearsOfExperience, y=predict(reg, newdata=train)), color='navy') +
+      ggtitle('Anual Salaries of Data Scientist vs Years of Experience (Training set)') +
+      xlab ('Years of Experience') +
+      ylab ('Annual Salary') +
+      scale_x_continuous(limits = c(0, 12)) +
+      scale_y_continuous(limits = c(0, 150000))
+
+#testing set visualized, lets say you are a data scientist eagerly looking for a job and applying to be hre, you know you have x yoe by implementing this regresion you can now predic your own salary if you are applying to a new job.
+```
+
+```{r}
+test <- data.frame(YearsOfExperience = c(2, 4))
+predic <- predict(reg, newdata= test)
+predic
+predic2 <- predict(reg, newdata= test, interval="confidence")
+predic2
+```
+
+The output contains the following columns:
+
+fit: the predicted sale values for the three new advertising budget
+lwr and upr: the lower and the upper confidence limits for the expected values, respectively. By default the function produces the 95% confidence limits.
+
+For example, the 95% confidence interval associated with a speed of 2 is (43698, 46837). This means that, according to our model, 2 years of experience will grant you a salary between 45 and 46.
