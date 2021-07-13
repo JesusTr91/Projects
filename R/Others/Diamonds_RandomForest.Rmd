@@ -1,0 +1,61 @@
+# Ideal Diamond
+
+# 
+
+We want to build a model that can predict the ideal diamond vs a good diamond. Is gonna be able to tell us, if the diamond is ideal or good. 
+
+The dataset containing the prices and other attributes of almost 54,000 diamonds with 10 varibles. The variables are as follows:
+
+1. price          price in US dollars (\$326–\$18,823)
+2. carat          weight of the diamond (0.2–5.01)
+3. cut            quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+4. color          diamond colour, from D (best) to J (worst)
+5. clarity        a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))
+6. x        length in mm (0–10.74)
+7. y        width in mm (0–58.9)
+8. z        depth in mm (0–31.8)
+9. depth          total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43–79)
+10. table         width of top of diamond relative to widest point (43–95)
+
+```{r}
+library(caret)
+library(tidyverse)
+
+df <- diamonds %>% 
+      filter(cut %in% c('Ideal', 'Good'))
+df <- sample_n(df, 5000)
+df$binary <- ifelse(df$cut == 'Ideal', 1, 0)
+dim(df)
+head(df)
+```
+
+```{r}
+df$binary <- as.factor(df$binary)
+names(df)
+df <- df[,-2]
+head(df)
+```
+
+```{r}
+rows <- createDataPartition(df$binary, p=0.7, list=F, times = 1)
+head(rows)
+train <- df[rows,]
+dim(train)
+test <- df[-rows,]
+dim(test)
+```
+
+```{r}
+control <- trainControl(method= 'repeatedcv', number= 2, repeats=2) # the cross validation is a method that involves putting the data into case subsets. In our case we just put two for each subset is healout while the model is trained on other subset this process is complete until acuraccy is determined for each instance in the data set and overal accuracy its provided, in our case we are using a repeated crosvalidation and this is the proces when the data folds and repeteed a number of times the final model accuracy is taken as the mean of the model repeats.
+model <- train(binary ~ ., data=train, method= 'ranger', trControl= control)
+model
+```
+
+```{r}
+pred <- predict(model, test)
+pred
+
+confusionMatrix(pred, test$binary)
+#
+```
+
