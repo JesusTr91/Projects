@@ -1,0 +1,52 @@
+#
+
+```{r}
+library(neuralnet)
+library(caret)
+library(tidyverse)
+library(mlbench)
+library(e1071)
+library(ggplot2)
+
+setwd("C:/Users/Propietario/Desktop/R/Coursera")
+df <- read.csv('diabetes.csv')
+df$Outcome <- as.factor(df$Outcome)
+df$Diabetes <- ifelse(df$Outcome == 0, 'Negative', 'Positive')
+
+ggplot(df, aes(Diabetes, fill = factor(Diabetes))) +
+      geom_bar()
+
+
+```
+
+```{r}
+rows <- createDataPartition(df$Outcome, times = 1, p = 0.7, list=F)
+train <- df[rows, ]
+test <- df[-rows, ]
+names(df)
+train <- train[, -10]
+test <- test[, -10]
+
+model <- train(as.factor(Outcome) ~ ., 
+               data=train,
+               method='ranger',
+               trControl = trainControl(method='repeatedcv', number=2, repeats=2))
+model
+
+```
+
+```{r}
+pred_train <- predict(model, train)
+pred_test <- predict(model, test)
+
+pred_train
+confusionMatrix(pred_train, train$Outcome)
+confusionMatrix(pred_test, test$Outcome)
+```
+
+
+
+
+
+
+
