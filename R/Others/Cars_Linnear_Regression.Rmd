@@ -1,0 +1,131 @@
+```{r}
+library('ggplot2')
+library('dplyr')
+library('sjlabelled')
+library('sjmisc')
+library('scales')
+library('sjPlot')
+theme_set((theme_sjplot()))
+
+#Load dataset and summarize it
+setwd('C:/Users/Propietario/Desktop/R')
+data <- read.csv('cars.csv', header=TRUE, stringsAsFactors = FALSE)
+head(data)
+str(data)
+summary(data)
+
+#Clean the dataset
+cols <- names(data)[vapply(data, is.character, logical(1))] #You collect names of all columns that returned  TRUE to the function is.character.
+#Next apply the funtion trimws() to remove leading and trilling whitespaces in this character columns
+data[, cols] <- lapply(data[, cols], trimws)
+data[data=='N/A'] = NA
+sapply(data, function(x) mean(is.na(x)))
+data$Market.Category <- NULL #Since KArket.Category has 31% of the data missing, its erased
+data <- data[complete.cases(data), ]#Erase all rows that have a missing value
+
+#Split into training and test set
+#One of the most important steps in machine learning is to create in your model on a training set that is separate and distinct from the test set for which you will gauge its accuracy.
+#Failure to do so will result in a model that may notgeneralize to unseen or future data set.
+
+numeric <- data %>% select_if(is.numeric)
+hist(numeric$MSRP, breaks=100)
+
+#The histogram tells you that there are some outliers in your column as the majority of cars have the price in this region. These outliers can cause issues in your model. So you can filter your data set to include cars with price range between 15,000 and 50,000.
+
+numeric <- numeric %>% 
+      filter(MSRP > 15000) %>% 
+      filter(MSRP < 50000)
+
+#Now let's split your data set into training and test set. To get consistent results and to make sure your partitions are reproducible, you set the seed to any integer. Next, you will select 80% of your data set as training and remaining 20% as test. To do so, you will get the number of rows that account for 80%.
+
+set.seed(123)
+size <- floor(0.8 * nrow(numeric))
+
+#Next, you will use the sample() function to randomly select 80% of rows from your data set and store the row numbers or indices.
+
+train_ind <- sample(seq_len(nrow(numeric)), size = size)
+
+#To get the training set, you can filter your data set to include the row numbers. To get the test set, you can filter your data set to ignore the row numbers.
+
+train <- numeric[train_ind, ]
+test <- numeric[-train_ind, ]
+
+#model
+#build a linear regression model and interpret model summary statistics. A linear regression model is a model that assumes a linear relationship between the predictors and the response variable. This means that the response variable can be calculated from a linear combination of the predictors.
+
+#specifying the MSRP column as the response variable while all other columns (represented by dot, .) are predictors.
+
+model <- lm(MSRP ~ ., data=train)
+
+#A critical part of the summary are the coefficients. This shows the regression beta coefficients and their statistical significance. Predictor variables that are significantly associated with outcome variable are marked by stars. The higher the number of stars, the most significant predictors are.
+
+#The residue standard error, R-squared, and the F statistics are metrics that are used to check how well the model fits to your data.
+#Residuals standard area corresponds to the prediction error in your training set and represents roughly the average difference between the observed values and the predicted values by the model. In this model, the residue standard error is 5495. That means on average, you can expect a deviation of 5495 in the price prediction.
+
+summary(model)
+
+#The R-squared ranges from 0 to 1 and represents the proportion of the variation in the response variable that can be explained by the model predictor variables. The higher the R squared value, the better the model is. However, a problem with the R-squared is that it will always increase when more predictors are added to the model even if those predictors are only weakly associated with the outcome or the response variable. A solution is to adjust the R-squared value by taking into account the number of predictor variables. The adjustment in the adjusted R-squared value in the summary output is a correction for the number of predictor variables included in the model. So you mainly considere the adjusted R-squared value. Your value is 0.59 which is good. The F statistic gives the overall significance of the model. It assesses whether at least one predictor value or variable has a non zero coefficient. The P-value of less than 10 to the power -16 shows that the model is highly significant. You can also plot the estimates for a better visual interpretation.
+
+plot_model(model, show.values = TRUE, value.offset = 0.2)
+
+#This plot shows you the coefficients and the significance value. Lastly, you can build a linear regression model by explicitly specifying the predictors that you want. For example, you may wish to include only three predictors rather than all from your numeric dataset
+
+model2 <- lm(MSRP ~ Engine.HP + highway.MPG + Engine.Cylinders, data=train)
+
+#Plot and analyse model residuals
+
+#Residuals could show how poorly a model represents data. Residuals are leftover values of the response variable after a fitting a model to data and they could reveal unexplained patterns in the data by the fitted model. Using this information, not only could you check if linear regression assumptions are met, but you could improve your model as well.
+
+par(mfrow=c(2,2))
+plot(model)
+
+#Residuals vs fitted plot shows if residuals have non-linear patterns. Fitted values are on the X axis and the residuals (that is, how far the fitted values are from the observed values) are on the Y axis. There could be a non linear relationship between predictor variables and the response variable, and the pattern could show up in this plot if the model doesn't capture the non-linear relationship. If you find equally spaced residuals around the horizontal line without distinct patterns, that is a good indication you don't have non linear relationships. In your plot you don't see any distinctive patterns.
+
+#The next plot is a normal QQ plot, which shows if residuals are normally distributed. Do the residuals follow a straight line, or do they deviate severely? It's good if residuals are lined well on the straight dashed line, but in reality, you will see some deviations. In your plot you don't see much deviation until towards the end, where some data points are deviating. Pause your video and interpret these plots yourself.
+
+#The third plot is called a scale location plot. This plot shows if residuals are spread equally along the ranges of predictors. This is how you can check the assumption of equal variance. It's good if you see a horizontal line with equally or randomly spread points. In your model the residuals appear randomly spread.
+
+#The last plot is residual vs leverage plot. This plots helps you to find influential cases in your data set. These cases could be extreme cases against the regression line and can alter the results if you exclude them from your model. In this plot, patterns are not relevant. You should watch out for outlying values at the upper right corner or the lower right corner. Those spots are the places where the cases can be influential against the regression line. Look for cases outside of a dash line, the Cook's distance. When cases are outside of the Cook's distance, meaning they have high Cook's distance scores, the cases are influential to the regression results. In your model, you can see observation number 6519 and 6522 are far beyond the Cook's distance lines. These are influential cases and will alter your model if you remove them.
+
+#The 4 plots show potential problematic cases with the row numbers of the data in your data set.  If some cases are identified across all 4 plots, you might want to take a closer look at them. Is there anything special about those points? Or could they just be simply errors in data entry? Your current model might not be the best way to understand your data, and you may need to revisit the model building step. You can try including or excluding predictors and see if the diagnostic plots improve.
+
+#Predict future values and calculate model error metrics
+
+#Using a regression model, you can predict future values and utilize these predictions in your business. For example, these predictions could be the number of sales in the next month or the amount of rain to fall tomorrow. Using the predictive values and the observed values, you can also assess your model's performance and calculate error metrics such as mean absolute error and root mean squared error.
+
+#You will predict the MSRP values of the test data set and compare it with the observed MSRP values. You can use the predict() function with the parameters - model and test data. You are storing the predicted values in a new column called pred in the test data set. Next, you can plot the predicted and observed MSRP values using ggplot.
+
+test$pred <- predict(model, newdata = test)
+par(mfrow = c(1,1))
+
+ggplot(test,aes(x=MSRP, y=pred)) +
+      geom_point() +
+      geom_smooth(method='lm', color='blue') +
+      theme_bw()
+
+# On the X axis, you can see the observed MSRP value and on the  Y axis it, the predicted values. The blue line is a regression line between the predicted and observed values.
+
+#first find the error, which is each observed value subtracted from the respective predicted value.
+
+#RMSE is a good measure off how accurately the model predicts the response and it is the most important criteria for fit if the main purpose of the model is prediction. Your model's RMSE alue is 5546 which is fine, given that the  range of your MSRP value in your data set is between 15,000 and 50,000.
+
+error <- test$pred -test$MSRP
+rmse <- sqrt(mean(error**2))
+
+#mean absolute error or MAE. MAE measures the average magnitude of the errors in your predictions without considering their direction. Your model's, mean absolute error is 4401 which means that on average you would expect an error magnitude of 4401 in your predictions. This error can either be positive or negative.
+
+
+mae <- mean(abs(error))
+mae
+
+# in RMSE, since the others are squared before they are averaged, the RMSE gives a relatively high weight to large errors. This means the RMSE should be more useful when large errors are particularly undesirable. But from an interpretation standpoint, mean absolute error is better.
+
+
+
+
+
+
+
+
+```
+
