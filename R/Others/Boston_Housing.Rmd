@@ -1,0 +1,90 @@
+# Comparing multiple models using Boston housing data set
+
+We are gonna built three separate models: Linear, Gbm and a Random forest and then compare the 3 against each other to see which model perform the best. 
+
+The Boston data frame has 506 rows and 14 columns and contains the following columns:
+
+1. crim                 per capita crime rate by town.
+2. zn                   proportion of residential land zoned for lots over 25,000 sq.ft.
+3. indus                proportion of non-retail business acres per town.
+4. chas                 Charles River dummy variable (= 1 if tract bounds river; 0 otherwise).
+5. nox                  nitrogen oxides concentration (parts per 10 million).
+6. rm                   average number of rooms per dwelling.
+7. age                  proportion of owner-occupied units built prior to 1940.
+8. dis                  weighted mean of distances to five Boston employment centres.
+9. rad                  index of accessibility to radial highways.
+10. tax                 full-value property-tax rate per \$10,000.
+11. ptratio             pupil-teacher ratio by town.
+12. black               1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town.
+13. lstat               lower status of the population (percent).
+14. medv                median value of owner-occupied homes in \$1000s.
+```{r}
+library(caret)
+library(MASS)
+```
+
+## Exploratory Analysis
+
+```{r}
+df <- Boston
+str(df)
+hist(df$age, col='green')
+summary(df)
+
+```
+
+It seems many of the houses are pretty old, which makes sense since Boston is an old town
+
+```{r}
+rows <- sample(1:nrow(df), nrow(df) * 0.8, replace = FALSE)
+head(rows)
+train <- df[rows,]
+test <- df[-rows,]
+dim(test)
+```
+
+```{r}
+rows2 <- createDataPartition(df$age, time = 1, p= 0.8, list=FALSE)
+train2 <- df[rows2,]
+test2 <- df[-rows2,]
+dim(test2)
+
+```
+
+We use the train function, age is our independent variable with all the variabls that we want to predict on. Traincontrol for repeating crossvalidation, 2 times, repeated 2.
+
+```{r}
+control <- trainControl(method= "repeatedcv", number=2, repeats= 2)
+linear <- train(age ~ ., data = train2, method = 'lm', trControl= control)
+linear
+?train
+```
+We got and MSR of 15.7 years, R-squared explains 67% of the variability in the data.
+
+```{r}
+random_f <- train(age ~ ., 
+                  data = train2, 
+                  method = 'ranger', 
+                  trControl= control)
+
+                  
+```
+
+```{r}
+gbm <- train(age ~ ., data = train2, method = 'gbm', trControl= trainControl(method='repeatedcv', number = 2, repeats = 2))
+```
+
+```{r}
+#take the results and put them in the function resamples to allow us to compare them.
+
+sample <- resamples(list(Linear=linear,  Forest= random_f, GBM=gbm)) #
+bwplot(sample) # Forest has the most variability, gbm is close and linear falls below. 3 models perform well with r squared.
+dotplot(sample) # Similar situation except we have the confidence level, we can say that the models will be between the RMSE range shown in the graphic, based on this gpm  will be the best to use.
+summary(sample) # The RMSE its the one that most people use. We can see that the forest had the lowset value, forest and gpm are slightly the same and linear model perfroms slightly worst. R squared, random and gpm picked uo the most variance in the data, linear model perform as well.
+
+```
+
+```{r}
+
+```
+
