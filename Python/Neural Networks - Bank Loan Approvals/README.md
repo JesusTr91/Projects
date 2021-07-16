@@ -8,5 +8,4 @@ Machine Learning is capable of generating credit risk models based on financial 
 
 Most bank customers are depositors and the bank would like to start targeting those customers who are worthy to issue personal loans and make revenue by charging them interests. Therefore, the bank would like to retain those depositors and convert them to personal loan customers and therefore growing aanual rvenue.
 
-In this project we will assume that you work as a data scientist at the bank and the bank management team would like to build and train a deep neural network model to predict the likelihood off customers buying personal loans based on their features, such as their age, experience, income, family education and credit card information that can be able to predict the likelihood
-off liability customers.
+In this project we will assume that you work as a data scientist at the bank and the bank management team would like to build and train a deep neural network model to predict the likelihood off customers buying personal loans based on their features, such as their age, experience, income, family education and credit card information that can be able to predict the likelihood of customers liability.
